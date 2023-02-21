@@ -1,0 +1,135 @@
+/* Mobile First */
+
+@font-face {
+    font-family: "Source Sans Pro Regular" ;
+    src: url("../assets/fonts/SourceSans/SourceSansPro-Regular.ttf");
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Source Sans Pro Regular";
+}
+
+/*Header*/ 
+
+.encabezado {
+    background-image: url(../assets/img/Banner.png);
+    background-color:rgba(255, 249, 240, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.logo_encabezado{
+    border-image: none;
+    margin: 10px auto;
+    width: 8%;
+    justify-items: center;
+    z-index: 5;
+}
+.navegador , ul, li {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: inline-block;
+    align-items: center;
+}
+
+.linkNav {
+    color: rgb(255, 255, 255); 
+    text-decoration:none ;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(218, 116, 15, 0);
+}
+
+/*Main de todas las páginas*/ 
+
+.FondoPantalla {
+    background-color: #FFD060 ;
+}
+.Principal{
+    background-color: #FFD060 ;
+}
+
+/*Página principal*/
+
+.título{
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Contenedor para imagen de inicio. */ 
+
+.contenedorImagen {
+    padding: 20px;
+    border-radius: 2%;
+    width: 100%;
+    object-fit:contain;
+    background-color: #f15942a2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-items: center;
+    display: inline-block;
+}
+    
+.textoInicio{
+    font-size: 1.5em;
+}
+    
+/*Icóno con link a Whatsapp*/
+.Whatsapp {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #f15942a2 ;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+.WhatsappFlotante {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px auto;
+    align-items: center;
+}
+
+/*Pie de Página*/ 
+
+.PieDePagina{
+    background-image: url(../assets/img/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: flex-end;
+    }
+
+.LogoFooter{
+    border-image: none;
+    margin: 0px auto;
+    width: 7%;
+   }
+
+.redesSociales{
+    font-size: 1em;    
+    text-align: center;
+    color: white;
+}
+
+.iconoRedes{
+    font-size: 1.7rem;
+    color: #FFD060;
+    display: inline-block;
+    }

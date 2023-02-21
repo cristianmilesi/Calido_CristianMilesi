@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "Source Sans Pro Regular" ;
+    src: url("../assets/fonts/SourceSans/SourceSansPro-Regular.ttf");
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Source Sans Pro Regular";
+}
+
+/*Header*/ 
+
+.encabezado {
+    background-image: url(../assets/img/Banner.png);
+    background-color:rgba(255, 249, 240, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    z-index: 10;
+}
+
+.logo_encabezado{
+    border-image: none;
+    margin: 10px auto;
+    width: 10% ;
+    height: 10%;
+    display: block;
+    align-items: center;
+    z-index: 5;
+}
+
+.navegador , ul, li {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: inline-block;
+    align-items: center;
+}
+
+.linkNav {
+    color: rgb(255, 255, 255); 
+    text-decoration:none ;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(218, 116, 15, 0);
+}
+
+/*Main de todas las páginas*/ 
+
+.Principal{
+    background-color: #FFD060 ;
+    align-items: center;
+    align-content: center;
+}
+
+/*Página principal*/
+
+.título{
+    padding: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+.Presentación{
+    align-items: center;
+    align-content: center;
+    display: inline-block; 
+}
+
+/*Contenedor para imagen de inicio. Intenté hacerlo estilo Cards (como explicó la profesora en el Afterclass), pero por alguna razón no logro que cambiar el color de fondo de la tarjeta. Agradecería me expliquen porque sucede esto*/ 
+.contenedorImagen {
+width: 40%;
+height: 40%;
+margin: 20px;
+padding: 10px;
+border-radius: 2%;
+display: inline-block;
+vertical-align: top;
+background-color: #f15942a2;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+align-items: center;
+position: relative;
+left: 50px;
+}
+
+.ImagenInicio{
+    width: 100%;
+}
+
+.textoInicio{
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.5em;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top: 40px;
+
+}
+/*Icóno con link a Whatsapp*/
+.Whatsapp {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #f15942a2 ;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+.WhatsappFlotante {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px auto;
+    align-items: center;
+}
+
+/*Etiquetas para las demas páginas*/
+
+/*Etiquetas para Productos*/
+
+.tarjeta{
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 2%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f15942c9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    text-align: center;
+}
+
+.imagenProducto{
+    width: 100%;
+}
+
+.PieDePagina{
+    background-image: url(../assets/img/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    }
+
+.LogoFooter{
+    border-image: none;
+    margin: 10px auto;
+    width: 5%;
+    height: 5%;
+    align-items: center;
+    align-content: center;
+    display: block;
+    }
+
+.redes{
+    display: inline-block;
+    width: 30vh;
+    margin: 5px auto;
+    position: relative;
+}
+
+/*Etiquetas para Clientes*/ 
+
+.PrincipalClientes{
+    background-color: #FFD060;
+}
+
+.sectionClientes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjetaClientes{
+    background-color: white;
+    border:#f15942a2 ; 
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.textoClientes{
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.985);
+    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
+    width: 50%; 
+    height: fit-content;
+    margin: 10px;
+    text-align:left;
+    align-content: center;
+}
+
+.cursiva{
+    font-style: oblique;
+}
+.imagenClientes{
+    width: 90%;
+    justify-content: center;
+}
+
+/*Etiquetas para Nosotros (usando GRIDS)*/ 
+
+.grids {
+    background-color: #FFD060;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 5fr 1fr;
+    grid-template-areas: "header header"
+                        "title title"
+                        "main1 main2"
+                        "footer footer";
+
+}
+
+.encabezado_nosotros{
+    background-image: url(../assets/img/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    text-align: center;
+    grid-area: header;
+}
+
+.Título_nosotros{
+    grid-area: title;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    justify-content: center;
+}
+.Principal_nosotros{
+    grid-area: main1;
+    display: flex;
+    justify-content: center;
+}
+
+.Imágenes_Nosotros{
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 2%;
+    background-color: #f15942a2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Texto_nosotros{
+    grid-area: main2;
+    font-size: 1.5em;
+}
+.PieDePagina_nosotros{
+grid-area: footer;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+/*Acá quería que el texto quede al lado del logo de cada red, pero no pude dejarlos bien centrados. Lo hice poniendole posición absoluta al texto, pero si hay otra forma mejor de hacerlo les agradezco la información*/ 
+
+.iconoRedes{
+font-size: 3rem;
+color: #FFD060;
+display: inline-block;
+}
+
+.textoRedes{
+    position:absolute;
+    left: 130px;
+    bottom: 8px;
+    
+}
