@@ -20,17 +20,20 @@ font-family: "Source Sans Pro Regular";
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    align-items: center;
+   /* align-items: center;
     align-content: center;
     text-align: center;
-    z-index: 10;
+    z-index: 10;*/
+}
+
+.contenedor_logo{
+    width: 15%;
+    padding: 5px auto;
 }
 
 .logo_encabezado{
     border-image: none;
-    margin: 10px auto;
-    width: 8%;
-    justify-items: center;
+    width: 70%;
     z-index: 5;
 }
 .navegador , ul, li {
@@ -42,14 +45,29 @@ font-family: "Source Sans Pro Regular";
 }
 
 .linkNav {
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255) !important ; 
     text-decoration:none ;
     font-size: 1.5em;
     font-weight: 600;
-    padding: 10px;
-    background-color: rgba(218, 116, 15, 0);
+    border-radius: 5px
+    /*padding: 10px;
+    background-color: rgba(218, 116, 15, 0);*/
 }
 
+.linkNav:hover{
+    color: #f15942a2 !important; 
+    border-radius: 5px;
+    background-color: #FFD060;
+}
+
+.Nav_pages{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.ToggleColor{
+    border-color: #FFD060;
+}
 /*Main de todas las páginas*/ 
 
 .FondoPantalla {
@@ -76,10 +94,10 @@ font-family: "Source Sans Pro Regular";
     width: 100%;
     object-fit:contain;
     background-color: #f15942a2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-items: center;
-    display: inline-block;
+    display: inline-block;*/
 }
     
 .textoInicio{
@@ -132,4 +150,61 @@ font-family: "Source Sans Pro Regular";
     font-size: 1.7rem;
     color: #FFD060;
     display: inline-block;
+    }
+
+/* ELEMENTOS DE PÁGINA "NOSOTROS" */ 
+
+.Imágenes_Nosotros{
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 2%;
+    background-color: #f15942a2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Texto_nosotros{
+    grid-area: main2;
+    font-size: 1.5em;
+}
+
+/* Elementos de Página "PRODUCTOS"*/ 
+.tarjeta{
+    /*width: 30%;
+    height: 30%;
+    margin: 10px;
+    padding: 10px;*/
+    border-radius: 2%;
+    /*display: inline-block;
+    vertical-align: top;*/
+    background-color: #f15942c9;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+    align-items: center;
+    text-align: center;
+}
+
+.imagenProducto{
+    width: 100%;
+}
+
+/*Elementos de Página CLIENTES*/
+.textoClientes{
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.985);
+    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
+    /*width: 50%; 
+    height: fit-content;
+    margin: 10px;*/
+    text-align:left;
+    align-content: center;
+}
+
+.cursiva{
+    font-style: oblique;
+}
+
+/*Elementos de CONTACTO*/ 
+.iconoRedesContacto{
+    font-size: 1.7rem;
+    color: #f15942 ;
     }

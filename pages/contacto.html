@@ -6,63 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calido - Contacto</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/brands.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/regular.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/solid.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
-    <header class="encabezado">
-        <div>
-        <a href="../index.html"><img class="logo_encabezado" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido"></a>
-        </div>
-
-        <nav class="navegador">
-            <ul>
-                <li>
-                    <a class="linkNav" href="../index.html">Inicio</a>
+<body class="FondoPantalla">
+    <header class="container-fluid sticky-top encabezado"> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand contenedor_logo" href="../index.html"> 
+              <img class="logo_encabezado" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo Cálido"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 Nav_pages">
+                <li class="nav-item">
+                  <a class="nav-link active linkNav" aria-current="page" href="../index.html">Inicio</a>
                 </li>
-                <li>
-                    <a class="linkNav" href="./nosotros.html">Nosotros</a>
+                <li class="nav-item">
+                  <a class="nav-link linkNav " href="./nosotros.html">Nosotros</a>
                 </li>
-                <li>
-                    <a class="linkNav" href="./productos.html">Productos</a>
+                <li class="nav-item">
+                  <a class="nav-link linkNav " href="./productos.html">Productos</a>
                 </li>
-                <li>
-                    <a class="linkNav" href="./clientes.html">Clientes</a>
+                <li class="nav-item">
+                  <a class="nav-link linkNav" href="./clientes.html">Clientes</a>
                 </li>
-                <li>
-                    <a class="linkNav" href="#">Contacto</a>
+                <li class="nav-item">
+                  <a class="nav-link linkNav " href="#">Contacto</a>
                 </li>
-            </ul>
+              </ul>
+                </div>
+          </div>
+          
         </nav>
-
     </header>
 
-    <main class="Principal">
-        <h1>Contactate con nosotros</h1>
+    <main class="container">
+        <h1 class="título">Contactate con nosotros</h1>
 
         <section>
             <p>Nuestro taller está ubicado en la ciudad de Concepción del Uruguay, Entre Ríos. <br> Podes contactarte con nosotros a traves de los siguientes medios</p>
 
-            <div class="RedesSociales">
-                <img src="../assets/img/instagram.png" alt="Logo Instagram">
-                <p>@calidomascotas.ok</p>
+            <div class="row">
+                <a href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedesContacto"></i></a>
+                 <p class="textoRedes">@calidomascotas.ok</p>
             </div>
 
-            <div class="RedesSociales">
-                <img src="../assets/img/facebook.png" alt="logo facebook">
-                <p>calidomascotas.ok</p>
+            <div>
+                <a href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedesContacto"></i></a>
+              <p class="textoRedes">/calidomascotas.ok</p>
             </div>
 
-            <div class="RedesSociales">
-                <img src="../assets/img/whatsapp.png" alt="logo Whatsapp">
-                <p>343 6222121</p>
+            <div>
+                <a href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedesContacto"></i></a>
+              <p class="textoRedes">343-4622121</p>
             </div>
 
-            <div class="RedesSociales">
-                <img src="../assets/img/mail-inbox.png" alt="logo Email">
-                <p>calido.objetos.ok@gmail.com</p>
+            <div>
+                <i class="fa-solid fa-envelope-open iconoRedesContacto"></i>
+                <p class="textoRedes">calido.objetos.ok@gmail.com</p>
             </div>
         </section>
+
+        <!--Cambiar FORMULARIO por un Formulario de Bootstrap-->
 
         <section>
             <p></p> O completá el siguiente formulario y pronto te estaremos respondiendo:</p>
@@ -111,31 +126,35 @@
         </section>
     </main>
 
-    <footer class="PieDePagina">
-        <img class="LogoFooter" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
 
-        <div class="redes">
-            <img class="iconoRedes" src="../assets/img/instagram.png" alt="icono Instagram">
-            <p class="textoRedes">@calidomascotas.ok</p>
-        </div>
-        <div class="redes">
-            <img class="iconoRedes" src="../assets/img/facebook.png" alt="icono Facebook">
-            <p class="textoRedes">/calidomascotas.ok</p>
-        </div>
-        <div class="redes">
-            <img class="iconoRedes" src="../assets/img/whatsapp.png" alt="icono Whatsapp">
-            <p class="textoRedes">343-4622121</p>
-        </div>
-        <div class="redes">
-            <img class="iconoRedes" src="../assets/img/mail-inbox.png" alt="icono Email">
-            <p class="textoRedes">calido.objetos.ok@gmail.com</p>
+    <footer class="container-fluid pt-1 PieDePagina">
+        <img class="row LogoFooter mt-3" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
+
+        <div class="redesSociales row ">
+          <div class="col-sm-12 col-md-3">
+              <a href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
+              <p class="textoRedes">@calidomascotas.ok</p>
+          </div>
+          <div class="col-sm-12 col-md-3">
+              <a href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
+              <p class="textoRedes">/calidomascotas.ok</p>
+          </div>
+          <div class="col-sm-12 col-md-3">
+              <a href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
+              <p class="textoRedes">343-4622121</p>
+          </div>
+          <div class="col-sm-12 col-md-3">
+              <i class="fa-solid fa-envelope-open iconoRedes"></i>
+              <p class="textoRedes">calido.objetos.ok@gmail.com</p>
+          </div>
         </div>
 
-        <div>
+        <div class="redesSociales row">
             <p>©Calido: Accesorios de diseño para mascotas. <br> -2023-</p>
         </div>
 
     </footer>
     
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

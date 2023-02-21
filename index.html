@@ -17,10 +17,42 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<!--Realize el CSS de esta pagina, y aplique algunas cosas en todas las demas. Las imagenes son temporales y mi intencion es ir mejorando todo a medida que avancemos-->
-
 <body class="FondoPantalla">
     <header class="container-fluid sticky-top encabezado">
+      <!--Navegador de Bootstrap Modificado. Me hubiera gustado dejar el logo centrado sobre los links, pero no encontré la forma de hacerlo. Además para la versión mobile si me gustaría el logo a la izquierda y la "hamburguesa" a la derecha-->
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand contenedor_logo" href="#"> 
+            <img class="logo_encabezado" src="./assets/img/Logo Cálido Blanco SF.png" alt="Logo Cálido"> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 Nav_pages">
+              <li class="nav-item">
+                <a class="nav-link active linkNav" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkNav " href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkNav " href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkNav" href="./pages/clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link linkNav " href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </nav>
+
+      <!--
         <div class="row">
         <a href="#"><img class="logo_encabezado" src="./assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido"></a>
         </div>
@@ -43,59 +75,44 @@
                     <a class="linkNav" href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
-            <!--Componente NavBar de Bootstrap. Necesario modificar-->
-            <!--
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-                
-              </nav>-->
-        </nav>
+            
+        </nav>-->  
 
     </header>
     
-    <main class="container-fluid">
+    <main class="container">
       
       <div row>
         <h1 class="título">Cálido: Accesorios de diseño para mascotas</h1>
       </div>
 
-        <!--En esta sección me gustaría que haya una galería de imagenes que pasen automáticamente en vez de una sola imagen. Lo dejo para mas adelante si es posible hacerlo.-->
+        <!--En esta sección agregué un carrousel como tenía previsto-->
       <section class="row">
+        
         <div class="col-md-6 my-4 justify-content-center">
-          <img class="contenedorImagen" src="./assets/img/CALIDO PARANA (22).jpg" alt="Imagenes de productos">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner shadow contenedorImagen">
+              <div class="carousel-item active">
+                <img src="./assets/img/CALIDO PARANA (22).jpg" class="d-block w-100" alt="Imágen de producto 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/CALIDO PARANA (23).jpg" class="d-block w-100" alt="Imágen de producto 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/CALIDO PARANA (20).jpg" class="d-block w-100" alt="..Imágen de producto 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--<img class="contenedorImagen" src="./assets/img/CALIDO PARANA (22).jpg" alt="Imagenes de productos"> -->
+
         </div>
 
         <!--Tanto las imágenes como el texto es provisorio y lo iré mejorando para la entrega final. Cualquier sugerencia se agradece.-->
@@ -109,7 +126,8 @@
         </div>
 
       </section>
-
+      
+      <!--Esta sección para el botón de Whatsapp quedó igual, para evitar cualquier problema con Bootstrap-->
       <section class="Whatsapp">
             <a Title= "¡Escribinos!" href="https://wa.me/543434622121" target="_blank"> <img class="WhatsappFlotante" src="./assets/img/whatsapp.png" alt="Logo de Whatsapp"></a>
             <p>¡Escribinos!</p>

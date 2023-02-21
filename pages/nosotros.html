@@ -6,88 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calido - Nosotros</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/brands.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/regular.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/solid.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/svg-with-js.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 
-<body>
-    <section class="grids">
-        <header class="encabezado_nosotros">
-            <div>
-            <a href="../index.html"><img class="logo_encabezado" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido"></a>
-            </div>
+<body class="FondoPantalla">
+    <!--Navegador de Bootstrap Modificado. Me hubiera gustado dejar el logo centrado sobre los links, pero no encontré la forma de hacerlo. Además para la versión mobile si me gustaría el logo a la izquierda y la "hamburguesa" a la derecha-->
+    
+    <header class="container-fluid sticky-top encabezado"> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand contenedor_logo" href="../index.html"> 
+              <img class="logo_encabezado" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo Cálido"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 Nav_pages">
+                <li class="nav-item">
+                  <a class="nav-link active linkNav" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkNav " href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkNav " href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkNav" href="./clientes.html">Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkNav " href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+                </div>
+          </div>
+          
+        </nav>
+    </header>
 
-            <nav class="navegador">
-                <ul>
-                    <li>
-                        <a class="linkNav" href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="linkNav" href="#">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="linkNav" href="./productos.html">Productos</a>
-                    </li>
-                    <li>
-                        <a class="linkNav" href="./clientes.html">Clientes</a>
-                    </li>
-                    <li>
-                        <a class="linkNav" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </header>
-
-        <section class="titulo_nosotros">
+    <main class="container">
+        <!--RE-HACER TODO ESTO USANDO BOOTSTRAP-->
+        <div class="row">
             <h1 class="título">Acerca de nuestro emprendimiento</h1>
-        </section>
-        
-        <section class="Principal_nosotros">
+        </div>
+                
+        <section class="row">
             <!--Acá quisiera poner en realidad una Carrousel de imágenes que pase automáticamente. Por lo pronto pongo 3 posibles imágenes para tener como referencia. Las clases son temporales-->
 
-            <div class="Imágenes_Nosotros">
-                <img class="ImagenInicio" src="../assets/img/Calido.png" alt="Foto 1">
-            </div>
-        </section>
-    
-        <section class="Texto_nosotros">
-            <div>
+            <div class="Texto_nosotros col-md-6 col-sm-12">
                 <p> Cálido es un emprendimiento surgido en el año 2019, en la ciudad de Paraná. <br> En un principio comenzamos confeccionando medallitas personalizadas para mascotas y con el tiempo incluímos nuevos productos a nuestro catálogo</p>
                 <p>Actualmente nuestro taller se encuentra en Concepción del Uruguay, pero realizamos envíos a diferentes partes del país, distribuyendo Pet Shops y Veterinarias. <br> Combinar conocimientos de diseño con alternativas funcionales y un trabajo genuino es el objetivo de este emprendimiento, que se especializó en desarrollar una línea de productos caracterizados para identificar y cuidar las mascotas. <br> Formamos parte también del programa Manos Entrerrianas de la Provincia de Entre Ríos. <br> Realizamos nuestro trabajo con mucha dedicación y detalle para que tus mascotas reciban el mejor producto</p>
             </div>
+
+            <div class="justify-content-center col-md-6 col-sm-12">
+                <img class="Imágenes_Nosotros row" src="../assets/img/Calido.png" alt="Foto de empresa 1">
+                <img class="Imágenes_Nosotros row" src="../assets/img/CALIDO PARANA (5).jpg" alt="Foto de empresa 2">
+                <img class="Imágenes_Nosotros row" src="../assets/img/flyer digital.png" alt="Foto de empresa 3">
+            </div>           
         </section>
 
         <section class="Whatsapp">
             <a Title= "¡Escribinos!" href="https://wa.me/543434622121" target="_blank"> <img class="WhatsappFlotante" src="../assets/img/whatsapp.png" alt="Logo de Whatsapp"></a>
             <p>¡Escribinos!</p>
         </section>
-        
-        <footer class="PieDePagina_nosotros PieDePagina">
-            <img class="LogoFooter" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
+    </main>
 
-            <div class="redes">
-                <img class="iconoRedes" src="../assets/img/instagram.png" alt="icono Instagram">
-                <p class="textoRedes">@calidomascotas.ok</p>
-            </div>
-            <div class="redes">
-                <img class="iconoRedes" src="../assets/img/facebook.png" alt="icono Facebook">
-                <p class="textoRedes">/calidomascotas.ok</p>
-            </div>
-            <div class="redes">
-                <img class="iconoRedes" src="../assets/img/whatsapp.png" alt="icono Whatsapp">
-                <p class="textoRedes">343-4622121</p>
-            </div>
-            <div class="redes">
-                <img class="iconoRedes" src="../assets/img/mail-inbox.png" alt="icono Email">
-                <p class="textoRedes">calido.objetos.ok@gmail.com</p>
-            </div>
+    <footer class="container-fluid pt-1 PieDePagina">
+        <img class="row LogoFooter mt-3" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
 
-            <div>
-                <p>©Calido: Accesorios de diseño para mascotas. <br> -2023-</p>
-            </div>
+        <div class="redesSociales row ">
+          <div class="col-sm-12 col-md-3">
+              <a href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
+              <p class="textoRedes">@calidomascotas.ok</p>
+          </div>
+          <div class="col-sm-12 col-md-3">
+              <a href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
+              <p class="textoRedes">/calidomascotas.ok</p>
+          </div>
+          <div class="col-sm-12 col-md-3">
+              <a href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
+              <p class="textoRedes">343-4622121</p>
+          </div>
+          <div class="col-sm-12 col-md-3">
+              <i class="fa-solid fa-envelope-open iconoRedes"></i>
+              <p class="textoRedes">calido.objetos.ok@gmail.com</p>
+          </div>
+        </div>
 
-        </footer>
-    </section>
+        <div class="redesSociales row">
+            <p>©Calido: Accesorios de diseño para mascotas. <br> -2023-</p>
+        </div>
+
+    </footer>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
