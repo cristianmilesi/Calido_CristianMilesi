@@ -18,11 +18,10 @@
 </head>
 
 <body class="FondoPantalla">
-    <header class="container-fluid sticky-top encabezado">
-      <!--Navegador de Bootstrap Modificado. Me hubiera gustado dejar el logo centrado sobre los links, pero no encontré la forma de hacerlo. Además para la versión mobile si me gustaría el logo a la izquierda y la "hamburguesa" a la derecha-->
-
+  <!--Navegador de Bootstrap Modificado. Me hubiera gustado dejar el logo centrado sobre los links, pero no encontré la forma de hacerlo. Además para la versión mobile si me gustaría el logo a la izquierda y la "hamburguesa" a la derecha-->
+    <header class="container-fluid encabezado">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex">
           <a class="navbar-brand contenedor_logo" href="#"> 
             <img class="logo_encabezado" src="./assets/img/Logo Cálido Blanco SF.png" alt="Logo Cálido"> 
           </a>
@@ -51,32 +50,6 @@
         </div>
         
       </nav>
-
-      <!--
-        <div class="row">
-        <a href="#"><img class="logo_encabezado" src="./assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido"></a>
-        </div>
-
-        <nav class="navegador row">
-            <ul>
-                <li>
-                    <a class="linkNav" href="#">Inicio</a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/productos.html">Productos</a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/clientes.html">Clientes</a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-            
-        </nav>-->  
 
     </header>
     
@@ -111,8 +84,6 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-          <!--<img class="contenedorImagen" src="./assets/img/CALIDO PARANA (22).jpg" alt="Imagenes de productos"> -->
-
         </div>
 
         <!--Tanto las imágenes como el texto es provisorio y lo iré mejorando para la entrega final. Cualquier sugerencia se agradece.-->
@@ -136,24 +107,24 @@
     </main>
 
     <footer class="container-fluid pt-1 PieDePagina">
-        <img class="row LogoFooter mt-3" src="./assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
+        <img class="row LogoFooter mt-1" src="./assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
 
-        <div class="redesSociales row ">
-          <div class="col-sm-12 col-md-3">
-              <a href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
-              <p class="textoRedes">@calidomascotas.ok</p>
+        <div class="redesSociales row d-flex ">
+          <div class="col-sm-12 col-md-3 d-flex justify-content-center ">
+              <a class="d-inline-flex ancla" href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
+              <p>@calidomascotas.ok</p>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex justify-content-center">
+              <a class="d-inline-flex ancla" href="https://www.facebook.com/calidomascotas.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
+              <p class="d-inline-flex">/calidomascotas.ok</p>
           </div>
           <div class="col-sm-12 col-md-3">
-              <a href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
-              <p class="textoRedes">/calidomascotas.ok</p>
-          </div>
-          <div class="col-sm-12 col-md-3">
-              <a href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
-              <p class="textoRedes">343-4622121</p>
+              <a class="d-inline-flex ancla" href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
+              <p class="d-inline-flex">343-4622121</p>
           </div>
           <div class="col-sm-12 col-md-3">
               <i class="fa-solid fa-envelope-open iconoRedes"></i>
-              <p class="textoRedes">calido.objetos.ok@gmail.com</p>
+              <p class="d-inline-flex">calido.objetos.ok@gmail.com</p>
           </div>
         </div>
 

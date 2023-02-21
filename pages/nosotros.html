@@ -21,9 +21,9 @@
 <body class="FondoPantalla">
     <!--Navegador de Bootstrap Modificado. Me hubiera gustado dejar el logo centrado sobre los links, pero no encontré la forma de hacerlo. Además para la versión mobile si me gustaría el logo a la izquierda y la "hamburguesa" a la derecha-->
     
-    <header class="container-fluid sticky-top encabezado"> 
+    <header class="container-fluid encabezado"> 
         <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
+          <div class="container-fluid d-flex">
             <a class="navbar-brand contenedor_logo" href="../index.html"> 
               <img class="logo_encabezado" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo Cálido"> 
             </a>
@@ -33,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 Nav_pages">
                 <li class="nav-item">
-                  <a class="nav-link active linkNav" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link linkNav" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link linkNav " href="#">Nosotros</a>
+                  <a class="nav-link active linkNav" href="#">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link linkNav " href="./productos.html">Productos</a>
@@ -62,6 +62,9 @@
                 
         <section class="row">
             <!--Acá quisiera poner en realidad una Carrousel de imágenes que pase automáticamente. Por lo pronto pongo 3 posibles imágenes para tener como referencia. Las clases son temporales-->
+            <div class="justify-content-center col-md-6 col-sm-12">
+              <img class="Imágenes_Nosotros row" src="../assets/img/Calido.png" alt="Foto de empresa 1">
+            </div> 
 
             <div class="Texto_nosotros col-md-6 col-sm-12">
                 <p> Cálido es un emprendimiento surgido en el año 2019, en la ciudad de Paraná. <br> En un principio comenzamos confeccionando medallitas personalizadas para mascotas y con el tiempo incluímos nuevos productos a nuestro catálogo</p>
@@ -69,10 +72,11 @@
             </div>
 
             <div class="justify-content-center col-md-6 col-sm-12">
-                <img class="Imágenes_Nosotros row" src="../assets/img/Calido.png" alt="Foto de empresa 1">
-                <img class="Imágenes_Nosotros row" src="../assets/img/CALIDO PARANA (5).jpg" alt="Foto de empresa 2">
                 <img class="Imágenes_Nosotros row" src="../assets/img/flyer digital.png" alt="Foto de empresa 3">
-            </div>           
+            </div>
+            <div class="justify-content-center col-md-6 col-sm-12">
+              <img class="Imágenes_Nosotros row" src="../assets/img/CALIDO PARANA (5).jpg" alt="Foto de empresa 2">
+          </div>                      
         </section>
 
         <section class="Whatsapp">
@@ -82,34 +86,34 @@
     </main>
 
     <footer class="container-fluid pt-1 PieDePagina">
-        <img class="row LogoFooter mt-3" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
+      <img class="row LogoFooter mt-1" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
 
-        <div class="redesSociales row ">
-          <div class="col-sm-12 col-md-3">
-              <a href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
-              <p class="textoRedes">@calidomascotas.ok</p>
-          </div>
-          <div class="col-sm-12 col-md-3">
-              <a href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
-              <p class="textoRedes">/calidomascotas.ok</p>
-          </div>
-          <div class="col-sm-12 col-md-3">
-              <a href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
-              <p class="textoRedes">343-4622121</p>
-          </div>
-          <div class="col-sm-12 col-md-3">
-              <i class="fa-solid fa-envelope-open iconoRedes"></i>
-              <p class="textoRedes">calido.objetos.ok@gmail.com</p>
-          </div>
+      <div class="redesSociales row d-flex ">
+        <div class="col-sm-12 col-md-3 d-flex justify-content-center ">
+            <a class="d-inline-flex ancla" href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
+            <p>@calidomascotas.ok</p>
         </div>
+        <div class="col-sm-12 col-md-3 d-flex justify-content-center">
+            <a class="d-inline-flex ancla" href="https://www.facebook.com/calidomascotas.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
+            <p class="d-inline-flex">/calidomascotas.ok</p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <a class="d-inline-flex ancla" href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
+            <p class="d-inline-flex">343-4622121</p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+            <i class="fa-solid fa-envelope-open iconoRedes"></i>
+            <p class="d-inline-flex">calido.objetos.ok@gmail.com</p>
+        </div>
+      </div>
 
-        <div class="redesSociales row">
-            <p>©Calido: Accesorios de diseño para mascotas. <br> -2023-</p>
-        </div>
+      <div class="redesSociales row">
+          <p>©Calido: Accesorios de diseño para mascotas. <br> -2023-</p>
+      </div>
 
     </footer>
     
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

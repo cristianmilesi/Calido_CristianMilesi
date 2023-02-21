@@ -17,7 +17,7 @@
 </head>
 
 <body class="FondoPantalla">
-    <header class="container-fluid sticky-top encabezado"> 
+    <header class="container-fluid encabezado"> 
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand contenedor_logo" href="../index.html"> 
@@ -29,13 +29,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 Nav_pages">
                 <li class="nav-item">
-                  <a class="nav-link active linkNav" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link  linkNav" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link linkNav " href="./nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link linkNav " href="#">Productos</a>
+                  <a class="nav-link active linkNav " href="#">Productos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link linkNav" href="./clientes.html">Clientes</a>
@@ -49,36 +49,41 @@
           
         </nav>
     </header>
-
+<!--En esta parte me gustaría agregar una botón en cada tarjeta que permita abrir a una ventana sobre el mismo main, donde se puedan leer mejor los detalles de cada producto. Por el momento pongo esta especie de galería, pero a futuro quisiera poder tener esta opción-->
     <main class="container">
-
+      <div class="row">
         <h1 class="título">Conocé nuestros productos</h1>
-
-        <!--En esta parte me gustaría agregar una botón en cada tarjeta que permita abrir a una ventana sobre el mismo main, donde se puedan leer mejor los detalles de cada producto. Por el momento pongo esta especie de galería, pero a futuro quisiera poder tener esta opción-->
+      </div> 
+         
+      <section class="row d-flex justify-content-center">
+        <div class="col-md-4 col-sm-12 my-2 d-flex justify-content-center">
+          <div class="tarjeta ">
+            <h2 class="título_producto mt-1">Medallitas mascoteras</h2>
+            <img class="imagenProducto my-1" src="../assets/img/CALIDO Medallitas.jpg" alt="Medallitas identificadoras">
+            <p class="texto_producto my-1">De polímero y estampadas en sublimación con diversos diseños para colocar en el collar de la mascota. Vienen en cuatro formas y tamaños diferentes: hueso grande, círculo, hueso chico, y pez, para perros/as grandes, medianos/as, pequeños/as y gatos/as respectivamente. Se realizan más de cuarenta diseños diferentes y cuenta con un espacio en blanco al frente para completar con el nombre de la mascota, y un espacio en blanco al dorso para colocar el teléfono del dueño/a. Están pensadas para la comercialización en pet shops, veterinarias y forrajerías por lo que cuentan con un empaquetado que ayuda a exhibir el producto y en el cual se encuentran las indicaciones de uso. <br> Tamaños: para perros/as grandes (hueso grande), medianos/as (Hueso grande o círculo) y chicos/as (Hueso chico). Y además para gatos/as (Pez) <br> Pueden ser personalizadas con el nombre y el teléfono de tu mascota.</p>
+            <button class="botón_producto">Mas info</button>
+          </div>
+        </div>
         
-        <section class="row d-flex justify-content-between">
-            <div class="tarjeta mb-2 col-md-4 col-sm-12">
-             <h2>Medallitas mascoteras</h2>
-                <img class="imagenProducto" src="../assets/img/CALIDO Medallitas.jpg" alt="Medallitas identificadoras">
-             <p>De polímero y estampadas en sublimación con diversos diseños para colocar en el collar de la mascota. Vienen en cuatro formas y tamaños diferentes: hueso grande, círculo, hueso chico, y pez, para perros/as grandes, medianos/as, pequeños/as y gatos/as respectivamente. Se realizan más de cuarenta diseños diferentes y cuenta con un espacio en blanco al frente para completar con el nombre de la mascota, y un espacio en blanco al dorso para colocar el teléfono del dueño/a. Están pensadas para la comercialización en pet shops, veterinarias y forrajerías por lo que cuentan con un empaquetado que ayuda a exhibir el producto y en el cual se encuentran las indicaciones de uso. <br> Tamaños: para perros/as grandes (hueso grande), medianos/as (Hueso grande o círculo) y chicos/as (Hueso chico). Y además para gatos/as (Pez) <br> Pueden ser personalizadas con el nombre y el teléfono de tu mascota.</p>
-             <button class="botón_producto">Mas info</button>
-            </div>
+        <div class="col-md-4 col-sm-12 my-2 d-flex justify-content-evenly">
+          <div class="tarjeta">
+            <h2 class="título_producto mt-1">Bandanas o pañuelos</h2>
+            <img class="imagenProducto my-1" src="../assets/img/CALIDO bandanas.jpg" alt="Bandanas y pañuelos">
+            <p class="texto_producto my-1">Las bandanas son pañuelos de tela para pasar por el collar de la mascota. Están estampados con los mismos diseños de las medallitas. <br> Tamaños:  L, M y S. <br> Cuidados: Se puede sacar del collar y lavar en un lavarropas común y se debe evitar los tirones por parte de las mascotas.
+            </p>
+            <button class="botón_producto">Mas info</button>
+          </div>
+        </div>
 
-            <div class="tarjeta mb-2 col-md-4 col-sm-12">
-             <h2>Bandanas o pañuelos</h2>
-                <img class="imagenProducto" src="../assets/img/CALIDO bandanas.jpg" alt="Bandanas y pañuelos">
-                <p>Las bandanas son pañuelos de tela para pasar por el collar de la mascota. Están estampados con los mismos diseños de las medallitas. <br> Tamaños:  L, M y S. <br> Cuidados: Se puede sacar del collar y lavar en un lavarropas común y se debe evitar los tirones por parte de las mascotas.
-                 </p>
-                <button class="botón_producto">Mas info</button>
-            </div>
-
-            <div class="tarjeta mb-2 col-md-4 col-sm-12">
-                <h2>Collares</h2>
-                <img class="imagenProducto" src="../assets/img/CALIDO collares.jpg" alt="Collares">
-             <p>Confeccionados en polipropileno. Puede ir sólo o con bandanas y/o medallas identificatorias. <br> Tamaños: 4 medidas distintas. </p>
-             <button class="botón_producto">Mas info</button>
-            </div>
-        </section>
+        <div class="col-md-4 col-sm-12 mb-2 d-flex justify-content-evenly">
+          <div class="tarjeta">
+            <h2 class="título_producto mt-1">Collares</h2>
+            <img class="imagenProducto my-1" src="../assets/img/CALIDO collares.jpg" alt="Collares">
+            <p class="texto_producto my-1">Confeccionados en polipropileno. Puede ir sólo o con bandanas y/o medallas identificatorias. <br> Tamaños: 4 medidas distintas. </p>
+            <button class="botón_producto">Mas info</button>
+          </div>
+        </div>
+      </section>
 
         <section class="Whatsapp">
             <a Title= "¡Escribinos!" href="https://wa.me/543434622121" target="_blank"> <img class="WhatsappFlotante" src="../assets/img/whatsapp.png" alt="Logo de Whatsapp"></a>
@@ -88,24 +93,24 @@
     </main>
 
     <footer class="container-fluid pt-1 PieDePagina">
-        <img class="row LogoFooter mt-3" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
+        <img class="row LogoFooter mt-1" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
 
-        <div class="redesSociales row ">
-          <div class="col-sm-12 col-md-3">
-              <a href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
-              <p class="textoRedes">@calidomascotas.ok</p>
+        <div class="redesSociales row d-flex ">
+          <div class="col-sm-12 col-md-3 d-flex justify-content-center ">
+              <a class="d-inline-flex ancla" href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedes"></i></a>
+              <p>@calidomascotas.ok</p>
+          </div>
+          <div class="col-sm-12 col-md-3 d-flex justify-content-center">
+              <a class="d-inline-flex ancla" href="https://www.facebook.com/calidomascotas.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
+              <p class="d-inline-flex">/calidomascotas.ok</p>
           </div>
           <div class="col-sm-12 col-md-3">
-              <a href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedes"></i></a>
-              <p class="textoRedes">/calidomascotas.ok</p>
-          </div>
-          <div class="col-sm-12 col-md-3">
-              <a href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
-              <p class="textoRedes">343-4622121</p>
+              <a class="d-inline-flex ancla" href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedes"></i></a>
+              <p class="d-inline-flex">343-4622121</p>
           </div>
           <div class="col-sm-12 col-md-3">
               <i class="fa-solid fa-envelope-open iconoRedes"></i>
-              <p class="textoRedes">calido.objetos.ok@gmail.com</p>
+              <p class="d-inline-flex">calido.objetos.ok@gmail.com</p>
           </div>
         </div>
 
@@ -115,7 +120,7 @@
 
     </footer>
     
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
