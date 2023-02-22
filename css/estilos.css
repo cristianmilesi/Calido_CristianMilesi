@@ -152,7 +152,14 @@ font-family: "Source Sans Pro Regular";
     background-color: #f15942a2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+.Imágenes_Nosotros_Logo{
+    width: 75%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 2%;
+    background-color: #f15942a2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .Texto_nosotros{
     font-size: 1.5em;
     text-align:center;
@@ -163,13 +170,8 @@ font-family: "Source Sans Pro Regular";
 .tarjeta{
     width: 90%;
     height: initial;
-    /*margin: 10px;
-    padding: 10px;*/
     border-radius: 2%;
-    /*display: inline-block;
-    vertical-align: top;*/
     background-color: #f15942c9;
-   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -192,14 +194,26 @@ font-family: "Source Sans Pro Regular";
 }
 
 /*Elementos de Página CLIENTES*/
+
+.contenedorClientes {
+    width: 90%;
+    padding: 10px;
+    border-radius: 2%;
+    object-fit:contain;
+    background-color: #f15942a2;
+    justify-content: center;
+}
+
+.bordeFila{
+    border: #fff1d1;
+    border-radius: 2%;
+    border-style: dotted;
+}
 .textoClientes{
-    font-size: 2em;
+    font-size: 1.7em;
     color: rgba(255, 255, 255, 0.985);
     text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
-    /*width: 50%; 
-    height: fit-content;
-    margin: 10px;*/
-    text-align:left;
+    text-align:center;
     align-content: center;
 }
 
@@ -208,11 +222,11 @@ font-family: "Source Sans Pro Regular";
 }
 
 /*Elementos de CONTACTO*/ 
+
 .iconoRedesContacto{
     font-size: 1.7rem;
     color: #f15942 ;
     }
-
 
 /* Media Queries para versión Desktop */
 
@@ -267,35 +281,44 @@ font-family: "Source Sans Pro Regular";
         padding: 15px;
     }
 
-    /*PROUCTOS*/
-    /*
-    .tarjeta{
-        width: 90%;
-        /*height: initial;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 2%;
-        /*display: inline-block;
-        vertical-align: top;
-        background-color: #f15942c9;
-       /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    */
+    .Imágenes_Nosotros{
+    width: auto;
+    height: 50vh;
+}
+
+.Imágenes_Nosotros_Logo{
+    width: 82%;
+    align-items: center;
+    margin-top: 20px;
+}
+    /*PRODUCTOS*/
+    
     .título_producto {
         color: #fff1d1;
         font-size: 1.5em;
         font-weight: 600;
         margin: 5px auto;
     }
-    /*
-    .imagenProducto{
-        width: 90%;
-    }
+    
 
-    .texto_producto{
-        width: 90%;
-    }*/
+    /* CLIENTES */
+
+    .contenedorClientes {
+    width:auto;
+    height: 50vh;
+}
+
+.textoClientes{
+    font-size: 1.7em;
+    color: rgba(255, 255, 255, 0.985);
+    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
+    text-align:left;
+    padding: 10px auto;
+}
+
+.ClientePar{
+    flex-direction: row-reverse;
+}
+*/
+
 }
