@@ -1,0 +1,41 @@
+/*Header*/ 
+
+.encabezado {
+    background-image: url(../assets/img/Banner.png);
+    background-color:rgba(255, 249, 240, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor_logo{
+    width: 20%;
+    padding: 5px auto;
+}
+
+.logo_encabezado{
+    border-image: none;
+    width: 100%;
+    z-index: 5;
+}
+
+.linkNav {
+    color: rgb(255, 255, 255) !important ; 
+    text-decoration:none ;
+    font-size: $fuente-grande;
+    font-weight: 600;
+    border-radius: 5px;
+    align-items: center;
+    justify-items: center;
+}
+
+.linkNav:hover{
+    color: $color-oscuro !important; 
+    border-radius: 5px;
+    background-color: $color-claro;
+}
+
+.Nav_pages{
+    width: 100%;
+    justify-content: space-evenly;
+}

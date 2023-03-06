@@ -1,0 +1,23 @@
+/* ELEMENTOS DE PÁGINA "NOSOTROS" */ 
+
+.Imágenes_Nosotros{
+    width: 75%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 2%;
+    background-color: $color-oscuro;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.Imágenes_Nosotros_Logo{
+    width: 75%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 2%;
+    background-color: $color-oscuro;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.Texto_nosotros{
+    font-size: $fuente-grande;
+    text-align:center;
+    padding: 15px;
+}

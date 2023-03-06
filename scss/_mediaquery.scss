@@ -1,0 +1,93 @@
+/* Media Queries para versión Desktop */
+
+@media screen and (min-width:769px) {
+    /*header*/
+    .encabezado {
+        position: sticky;
+        top: 0px;
+        z-index: 5;
+    }
+    .contenedor_logo{
+        width: 10%;
+        padding: 5px auto;
+    }
+
+    .linkNav {
+        font-size: 1.8em;
+        font-weight: 600;
+  }
+    /*INICIO*/
+    .título{
+    padding: 10px;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    }
+   
+    .textoInicio{
+     font-size: 1.5em;
+    text-align:justify;
+    } 
+
+    /*Pie de Página*/ 
+
+    .LogoFooter{
+        border-image: none;
+        margin: 0px auto;
+        width: 5%;
+    }
+
+    .redesSociales{
+        font-size: 1em;
+    }
+
+    .iconoRedes{
+        font-size: 1.5rem;
+    }
+
+    /*NOSOTROS*/
+    .Texto_nosotros{
+        text-align:justify;
+        padding: 15px;
+    }
+
+    .Imágenes_Nosotros{
+    width: auto;
+    height: 50vh;
+}
+
+.Imágenes_Nosotros_Logo{
+    width: 82%;
+    align-items: center;
+    margin-top: 20px;
+}
+    /*PRODUCTOS*/
+    
+    .título_producto {
+        color: #fff1d1;
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 5px auto;
+    }
+    
+
+    /* CLIENTES */
+
+    .contenedorClientes {
+    width:auto;
+    height: 50vh;
+}
+
+.textoClientes{
+    font-size: 1.7em;
+    color: rgba(255, 255, 255, 0.985);
+    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
+    text-align:left;
+    padding: 10px auto;
+}
+
+.ClientePar{
+    flex-direction: row-reverse;
+}
+
+}

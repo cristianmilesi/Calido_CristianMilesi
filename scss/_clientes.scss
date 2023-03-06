@@ -1,0 +1,27 @@
+/*Elementos de Página CLIENTES*/
+
+.contenedorClientes {
+    width: 90%;
+    padding: 10px;
+    border-radius: 2%;
+    object-fit:contain;
+    background-color: $color-oscuro;
+    justify-content: center;
+}
+
+.bordeFila{
+    border: #fff1d1;
+    border-radius: 2%;
+    border-style: dotted;
+}
+.textoClientes{
+    font-size: $fuente-extragrande;
+    color: $fuente-clara;
+    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
+    text-align:center;
+    align-content: center;
+}
+
+.cursiva{
+    font-style: oblique;
+}

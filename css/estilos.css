@@ -1,323 +1,253 @@
+@charset "UTF-8";
 /* Mobile First */
-
 @font-face {
-    font-family: "Source Sans Pro Regular" ;
-    src: url("../assets/fonts/SourceSans/SourceSansPro-Regular.ttf");
-}
+  font-family: "Source Sans Pro Regular";
+  src: url("../assets/fonts/SourceSans/SourceSansPro-Regular.ttf"); }
 
-*{
-margin:0;
-padding:0;
-box-sizing: border-box;
-font-family: "Source Sans Pro Regular";
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro Regular"; }
 
-/*Header*/ 
-
+/*Header*/
 .encabezado {
-    background-image: url(../assets/img/Banner.png);
-    background-color:rgba(255, 249, 240, 0);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+  background-image: url(../assets/img/Banner.png);
+  background-color: rgba(255, 249, 240, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.contenedor_logo{
-    width: 20%;
-    padding: 5px auto;
-}
+.contenedor_logo {
+  width: 20%;
+  padding: 5px auto; }
 
-.logo_encabezado{
-    border-image: none;
-    width: 100%;
-    z-index: 5;
-}
+.logo_encabezado {
+  border-image: none;
+  width: 100%;
+  z-index: 5; }
 
 .linkNav {
-    color: rgb(255, 255, 255) !important ; 
-    text-decoration:none ;
-    font-size: 1.5em;
-    font-weight: 600;
-    border-radius: 5px;
-    align-items: center;
-    justify-items: center;
-}
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-radius: 5px;
+  align-items: center;
+  justify-items: center; }
 
-.linkNav:hover{
-    color: #f15942a2 !important; 
-    border-radius: 5px;
-    background-color: #FFD060;
-}
+.linkNav:hover {
+  color: #f15942a2 !important;
+  border-radius: 5px;
+  background-color: #FFD060; }
 
-.Nav_pages{
-    width: 100%;
-    justify-content: space-evenly;
-}
+.Nav_pages {
+  width: 100%;
+  justify-content: space-evenly; }
 
-
-/*Main de todas las páginas*/ 
-
+/*Main de todas las páginas*/
 .FondoPantalla {
-    background-color: #FFD060 ;
-}
+  background-color: #FFD060; }
 
 /*Página principal*/
+.título {
+  padding: 10px;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center; }
 
-.título{
-    padding: 10px;
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
-}
-
-/*Contenedor para imagenes y carrousel */ 
-
+/*Contenedor para imagenes y carrousel */
 .contenedorImagen {
-    padding: 10px;
-    border-radius: 2%;
-    width: 100%;
-    object-fit:contain;
-    background-color: #f15942a2;
-    justify-content: center;
-}
-    
-.textoInicio{
-    font-size: 1.5em;
-    text-align: center;
-}
-    
+  padding: 10px;
+  border-radius: 2%;
+  width: 100%;
+  object-fit: contain;
+  background-color: #f15942a2;
+  justify-content: center; }
+
+.textoInicio {
+  font-size: 1.5em;
+  text-align: center; }
+
 /*Icóno con link a Whatsapp*/
 .Whatsapp {
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    right: 20px;
-    bottom: 50px;
-    background-color: #f15942a2 ;
-    border-radius: 50%;
-    text-align: center;
-    color: white;
-    font-size: 0.8em;
-    z-index: 10;
-}
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  background-color: #f15942a2;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  z-index: 10; }
 
 .WhatsappFlotante {
-    width: 50px;
-    height: 50px;
-    margin: 10px 0px auto;
-    align-items: center;
-}
+  width: 50px;
+  height: 50px;
+  margin: 10px 0px auto;
+  align-items: center; }
 
-/*Pie de Página*/ 
+/*Pie de Página*/
+.PieDePagina {
+  background-image: url(../assets/img/Banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: flex-end; }
 
-.PieDePagina{
-    background-image: url(../assets/img/Banner.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-content: flex-end;
-    }
+.LogoFooter {
+  border-image: none;
+  margin: 0px auto;
+  width: 15%; }
 
-.LogoFooter{
-    border-image: none;
-    margin: 0px auto;
-    width: 15%;
-   }
+.redesSociales {
+  font-size: 0.8em;
+  text-align: center;
+  color: white; }
 
-.redesSociales{
-    font-size: 0.8em;    
-    text-align: center;
-    color: white;
-}
+.ancla {
+  text-decoration: none;
+  margin: 5px; }
 
-.ancla{
-    text-decoration: none;
-    margin: 5px;
-}
+.iconoRedes {
+  text-decoration: none !important;
+  font-size: 1rem;
+  color: #FFD060;
+  display: inline-block; }
 
-.iconoRedes{
-    text-decoration: none !important;
-    font-size: 1rem;
-    color: #FFD060;
-    display: inline-block;
-    }
+/* ELEMENTOS DE PÁGINA "NOSOTROS" */
+.Imágenes_Nosotros {
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 2%;
+  background-color: #f15942a2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
-/* ELEMENTOS DE PÁGINA "NOSOTROS" */ 
+.Imágenes_Nosotros_Logo {
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 2%;
+  background-color: #f15942a2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
-.Imágenes_Nosotros{
-    width: 75%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 2%;
-    background-color: #f15942a2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.Imágenes_Nosotros_Logo{
-    width: 75%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 2%;
-    background-color: #f15942a2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.Texto_nosotros{
-    font-size: 1.5em;
-    text-align:center;
-    padding: 15px;
-}
+.Texto_nosotros {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15px; }
 
-/* Elementos de Página "PRODUCTOS"*/ 
-.tarjeta{
-    width: 90%;
-    height: initial;
-    border-radius: 2%;
-    background-color: #f15942c9;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+/* Elementos de Página "PRODUCTOS"*/
+.tarjeta {
+  width: 90%;
+  height: initial;
+  border-radius: 2%;
+  background-color: #f15942c9;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 .título_producto {
-    color: #fff1d1;
-    font-size: 1.5em;
-    font-weight: 600;
-    margin: 5px auto;
-}
+  color: #fff1d1;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 5px auto; }
 
-.imagenProducto{
-    width: 90%;
-}
+.imagenProducto {
+  width: 90%; }
 
-.texto_producto{
-    width: 90%;
-    margin: 0px auto;
-}
+.texto_producto {
+  width: 90%;
+  margin: 0px auto; }
 
 /*Elementos de Página CLIENTES*/
-
 .contenedorClientes {
-    width: 90%;
-    padding: 10px;
-    border-radius: 2%;
-    object-fit:contain;
-    background-color: #f15942a2;
-    justify-content: center;
-}
+  width: 90%;
+  padding: 10px;
+  border-radius: 2%;
+  object-fit: contain;
+  background-color: #f15942a2;
+  justify-content: center; }
 
-.bordeFila{
-    border: #fff1d1;
-    border-radius: 2%;
-    border-style: dotted;
-}
-.textoClientes{
-    font-size: 1.7em;
-    color: rgba(255, 255, 255, 0.985);
-    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
-    text-align:center;
-    align-content: center;
-}
+.bordeFila {
+  border: #fff1d1;
+  border-radius: 2%;
+  border-style: dotted; }
 
-.cursiva{
-    font-style: oblique;
-}
+.textoClientes {
+  font-size: 1.7em;
+  color: rgba(255, 255, 255, 0.985);
+  text-shadow: 2px 1px 1px rgba(125, 128, 122, 0.78);
+  text-align: center;
+  align-content: center; }
 
-/*Elementos de CONTACTO*/ 
+.cursiva {
+  font-style: oblique; }
 
-.iconoRedesContacto{
-    font-size: 1.7rem;
-    color: #f15942 ;
-    }
+/*Elementos de CONTACTO*/
+.iconoRedesContacto {
+  font-size: 1.7rem;
+  color: #f15942; }
 
 /* Media Queries para versión Desktop */
-
-@media (min-width:769px) {
-    /*header*/
-    .encabezado {
-        position: sticky;
-        top: 0px;
-        z-index: 5;
-    }
-    .contenedor_logo{
-        width: 10%;
-        padding: 5px auto;
-    }
-
-    .linkNav {
-        font-size: 1.8em;
-        font-weight: 600;
-  }
-    /*INICIO*/
-    .título{
+@media (min-width: 769px) {
+  /*header*/
+  .encabezado {
+    position: sticky;
+    top: 0px;
+    z-index: 5; }
+  .contenedor_logo {
+    width: 10%;
+    padding: 5px auto; }
+  .linkNav {
+    font-size: 1.8em;
+    font-weight: 600; }
+  /*INICIO*/
+  .título {
     padding: 10px;
     font-size: 2.2em;
     font-weight: 700;
-    text-align: center;
-    }
-   
-    .textoInicio{
-     font-size: 1.5em;
-    text-align:justify;
-    } 
-
-    /*Pie de Página*/ 
-
-    .LogoFooter{
-        border-image: none;
-        margin: 0px auto;
-        width: 5%;
-    }
-
-    .redesSociales{
-        font-size: 1em;
-    }
-
-    .iconoRedes{
-        font-size: 1.5rem;
-    }
-
-    /*NOSOTROS*/
-    .Texto_nosotros{
-        text-align:justify;
-        padding: 15px;
-    }
-
-    .Imágenes_Nosotros{
+    text-align: center; }
+  .textoInicio {
+    font-size: 1.5em;
+    text-align: justify; }
+  /*Pie de Página*/
+  .LogoFooter {
+    border-image: none;
+    margin: 0px auto;
+    width: 5%; }
+  .redesSociales {
+    font-size: 1em; }
+  .iconoRedes {
+    font-size: 1.5rem; }
+  /*NOSOTROS*/
+  .Texto_nosotros {
+    text-align: justify;
+    padding: 15px; }
+  .Imágenes_Nosotros {
     width: auto;
-    height: 50vh;
-}
-
-.Imágenes_Nosotros_Logo{
+    height: 50vh; }
+  .Imágenes_Nosotros_Logo {
     width: 82%;
     align-items: center;
-    margin-top: 20px;
-}
-    /*PRODUCTOS*/
-    
-    .título_producto {
-        color: #fff1d1;
-        font-size: 1.5em;
-        font-weight: 600;
-        margin: 5px auto;
-    }
-    
-
-    /* CLIENTES */
-
-    .contenedorClientes {
-    width:auto;
-    height: 50vh;
-}
-
-.textoClientes{
+    margin-top: 20px; }
+  /*PRODUCTOS*/
+  .título_producto {
+    color: #fff1d1;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 5px auto; }
+  /* CLIENTES */
+  .contenedorClientes {
+    width: auto;
+    height: 50vh; }
+  .textoClientes {
     font-size: 1.7em;
     color: rgba(255, 255, 255, 0.985);
-    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
-    text-align:left;
-    padding: 10px auto;
-}
-
-.ClientePar{
-    flex-direction: row-reverse;
-}
-
-}
+    text-shadow: 2px 1px 1px rgba(125, 128, 122, 0.78);
+    text-align: left;
+    padding: 10px auto; }
+  .ClientePar {
+    flex-direction: row-reverse; } }

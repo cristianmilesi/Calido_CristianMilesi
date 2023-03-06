@@ -1,0 +1,30 @@
+/*Main de todas las páginas*/ 
+
+.FondoPantalla {
+    background-color: $color-claro ;
+}
+
+/*Página principal*/
+
+.título{
+    padding: 10px;
+    font-size: $fuente-grande;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Contenedor para imagenes y carrousel */ 
+
+.contenedorImagen {
+    padding: 10px;
+    border-radius: 2%;
+    width: 100%;
+    object-fit:contain;
+    background-color: $color-oscuro;
+    justify-content: center;
+}
+    
+.textoInicio{
+    font-size: $fuente-grande;
+    text-align: center;
+}

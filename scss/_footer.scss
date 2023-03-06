@@ -1,0 +1,33 @@
+/*Pie de Página*/ 
+
+.PieDePagina{
+    background-image: url(../assets/img/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: flex-end;
+    }
+
+.LogoFooter{
+    border-image: none;
+    margin: 0px auto;
+    width: 15%;
+   }
+
+.redesSociales{
+    font-size: $fuente-pequena;    
+    text-align: center;
+    color: $fuente-clara;
+}
+
+.ancla{
+    text-decoration: none;
+    margin: 5px;
+}
+
+.iconoRedes{
+    text-decoration: none !important;
+    font-size: $fuente-normal;
+    color: $color-claro;
+    display: inline-block;
+    }
