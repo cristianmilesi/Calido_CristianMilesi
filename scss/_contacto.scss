@@ -1,6 +1,6 @@
 /*Elementos de CONTACTO*/ 
 
 .iconoRedesContacto{
-    font-size: $fuente-extragrande;
-    color: $color-intermedio;
+    font-size: map-get($tamañofuente, extragrande);
+    color: map-get($colores, intermedio);
     }

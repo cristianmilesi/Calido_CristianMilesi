@@ -15,7 +15,7 @@
    }
 
 .redesSociales{
-    font-size: $fuente-pequena;    
+    font-size: map-get($tamañofuente, pequena);    
     text-align: center;
     color: $fuente-clara;
 }
@@ -27,7 +27,7 @@
 
 .iconoRedes{
     text-decoration: none !important;
-    font-size: $fuente-normal;
-    color: $color-claro;
+    font-size: map-get($tamañofuente, normal);
+    color: map-get($colores, claro);
     display: inline-block;
     }

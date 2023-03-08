@@ -22,7 +22,7 @@
 .linkNav {
     color: rgb(255, 255, 255) !important ; 
     text-decoration:none ;
-    font-size: $fuente-grande;
+    font-size: map-get($map:$tamañofuente, $key:grande);
     font-weight: 600;
     border-radius: 5px;
     align-items: center;
@@ -30,9 +30,9 @@
 }
 
 .linkNav:hover{
-    color: $color-oscuro !important; 
+    color: map-get($colores, oscuro ) !important; 
     border-radius: 5px;
-    background-color: $color-claro;
+    background-color: map-get($colores, claro);
 }
 
 .Nav_pages{

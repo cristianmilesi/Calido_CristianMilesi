@@ -1,15 +1,28 @@
 @charset "UTF-8";
 /* Mobile First */
-@font-face {
-  font-family: "Source Sans Pro Regular";
-  src: url("../assets/fonts/SourceSans/SourceSansPro-Regular.ttf"); }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Source Sans Pro Regular"; }
 
+@font-face {
+  font-family: "Source Sans Pro Regular";
+  src: url("../assets/fonts/SourceSans/SourceSansPro-Regular.ttf"); }
+
+/*Variables*/
+/*
+$color-claro: #FFD060;
+$color-oscuro: #f15942a2; 
+$color-intermedio: #f15942;
+*/
+/*
+$fuente-pequena:0.8em;
+$fuente-normal: 1em;
+$fuente-grande: 1.5em;
+$fuente-extragrande: 1.75em;
+$fuente-muygrande: 2em;
+*/
 /*Header*/
 .encabezado {
   background-image: url(../assets/img/Banner.png);
@@ -52,7 +65,7 @@
 /*Página principal*/
 .título {
   padding: 10px;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   text-align: center; }
 
@@ -68,6 +81,89 @@
 .textoInicio {
   font-size: 1.5em;
   text-align: center; }
+
+/* ELEMENTOS DE PÁGINA "NOSOTROS" */
+.Imágenes_Nosotros {
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 2%;
+  background-color: #f15942a2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.Imágenes_Nosotros_Logo {
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 2%;
+  background-color: #f15942a2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.Texto_nosotros {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15px; }
+
+/* Elementos de Página "PRODUCTOS"*/
+.tarjeta {
+  width: 90%;
+  height: auto;
+  border-radius: 2%;
+  background-color: #f15942a2;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.título_producto {
+  color: #fff1d1;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 5px auto; }
+
+.imagenProducto {
+  width: 90%; }
+
+.texto_producto {
+  font-size: 1em;
+  width: 90%;
+  margin: 5px auto;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.botón_producto {
+  color: #323232;
+  background-color: #FFD060;
+  border-color: rgba(91, 91, 91, 0.696);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+/*Elementos de Página CLIENTES*/
+.contenedorClientes {
+  width: 90%;
+  padding: 10px;
+  border-radius: 2%;
+  object-fit: contain;
+  background-color: #f15942a2;
+  justify-content: center; }
+
+.bordeFila {
+  border: #fff1d1;
+  border-radius: 2%;
+  border-style: dotted; }
+
+.textoClientes {
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 2px 1px 1px rgba(125, 128, 122, 0.78);
+  text-align: center;
+  align-content: center; }
+
+.cursiva {
+  font-style: oblique; }
+
+/*Elementos de CONTACTO*/
+.iconoRedesContacto {
+  font-size: 1.75em;
+  color: #f15942; }
 
 /*Icóno con link a Whatsapp*/
 .Whatsapp {
@@ -113,86 +209,12 @@
 
 .iconoRedes {
   text-decoration: none !important;
-  font-size: 1rem;
+  font-size: 1em;
   color: #FFD060;
   display: inline-block; }
 
-/* ELEMENTOS DE PÁGINA "NOSOTROS" */
-.Imágenes_Nosotros {
-  width: 75%;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 2%;
-  background-color: #f15942a2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-
-.Imágenes_Nosotros_Logo {
-  width: 75%;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 2%;
-  background-color: #f15942a2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-
-.Texto_nosotros {
-  font-size: 1.5em;
-  text-align: center;
-  padding: 15px; }
-
-/* Elementos de Página "PRODUCTOS"*/
-.tarjeta {
-  width: 90%;
-  height: initial;
-  border-radius: 2%;
-  background-color: #f15942c9;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-
-.título_producto {
-  color: #fff1d1;
-  font-size: 1.5em;
-  font-weight: 600;
-  margin: 5px auto; }
-
-.imagenProducto {
-  width: 90%; }
-
-.texto_producto {
-  width: 90%;
-  margin: 0px auto; }
-
-/*Elementos de Página CLIENTES*/
-.contenedorClientes {
-  width: 90%;
-  padding: 10px;
-  border-radius: 2%;
-  object-fit: contain;
-  background-color: #f15942a2;
-  justify-content: center; }
-
-.bordeFila {
-  border: #fff1d1;
-  border-radius: 2%;
-  border-style: dotted; }
-
-.textoClientes {
-  font-size: 1.7em;
-  color: rgba(255, 255, 255, 0.985);
-  text-shadow: 2px 1px 1px rgba(125, 128, 122, 0.78);
-  text-align: center;
-  align-content: center; }
-
-.cursiva {
-  font-style: oblique; }
-
-/*Elementos de CONTACTO*/
-.iconoRedesContacto {
-  font-size: 1.7rem;
-  color: #f15942; }
-
 /* Media Queries para versión Desktop */
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
   /*header*/
   .encabezado {
     position: sticky;
@@ -202,12 +224,12 @@
     width: 10%;
     padding: 5px auto; }
   .linkNav {
-    font-size: 1.8em;
+    font-size: 1.75em;
     font-weight: 600; }
   /*INICIO*/
   .título {
     padding: 10px;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 700;
     text-align: center; }
   .textoInicio {
@@ -221,7 +243,7 @@
   .redesSociales {
     font-size: 1em; }
   .iconoRedes {
-    font-size: 1.5rem; }
+    font-size: 1.5em; }
   /*NOSOTROS*/
   .Texto_nosotros {
     text-align: justify;
@@ -244,8 +266,8 @@
     width: auto;
     height: 50vh; }
   .textoClientes {
-    font-size: 1.7em;
-    color: rgba(255, 255, 255, 0.985);
+    font-size: 1.75em;
+    color: white;
     text-shadow: 2px 1px 1px rgba(125, 128, 122, 0.78);
     text-align: left;
     padding: 10px auto; }

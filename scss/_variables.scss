@@ -1,13 +1,30 @@
 /*Variables*/
-
+/*
 $color-claro: #FFD060;
 $color-oscuro: #f15942a2; 
 $color-intermedio: #f15942;
+*/
 $fuente-clara: rgb(255, 255, 255);
 $fuente-oscura: rgb(50, 50, 50);
 
+/*
 $fuente-pequena:0.8em;
 $fuente-normal: 1em;
 $fuente-grande: 1.5em;
 $fuente-extragrande: 1.75em;
 $fuente-muygrande: 2em;
+*/
+
+$colores: (
+    claro: #FFD060,
+    intermedio:#f15942,
+    oscuro:#f15942a2
+);
+
+$tamañofuente: (
+    pequena:0.8em, 
+    normal: 1em,
+    grande: 1.5em,
+    extragrande: 1.75em,
+    muygrande: 2em,
+);

@@ -13,19 +13,19 @@
     }
 
     .linkNav {
-        font-size: 1.8em;
+        font-size: map-get($tamañofuente, extragrande);
         font-weight: 600;
   }
     /*INICIO*/
     .título{
     padding: 10px;
-    font-size: 2.2em;
+    font-size: map-get($tamañofuente, muygrande);
     font-weight: 700;
     text-align: center;
     }
    
     .textoInicio{
-     font-size: 1.5em;
+     font-size: map-get($tamañofuente, grande);
     text-align:justify;
     } 
 
@@ -38,11 +38,11 @@
     }
 
     .redesSociales{
-        font-size: 1em;
+        font-size: map-get($tamañofuente, normal);
     }
 
     .iconoRedes{
-        font-size: 1.5rem;
+        font-size: map-get($tamañofuente, grande );
     }
 
     /*NOSOTROS*/
@@ -65,7 +65,7 @@
     
     .título_producto {
         color: #fff1d1;
-        font-size: 1.5em;
+        font-size: map-get($tamañofuente, grande);
         font-weight: 600;
         margin: 5px auto;
     }
@@ -79,8 +79,8 @@
 }
 
 .textoClientes{
-    font-size: 1.7em;
-    color: rgba(255, 255, 255, 0.985);
+    font-size: map-get($tamañofuente, extragrande);
+    color: $fuente-clara;
     text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
     text-align:left;
     padding: 10px auto;

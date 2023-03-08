@@ -5,11 +5,11 @@
     position: fixed;
     right: 20px;
     bottom: 50px;
-    background-color: $color-oscuro ;
+    background-color:map-get($colores, oscuro) ;
     border-radius: 50%;
     text-align: center;
     color: $fuente-clara;
-    font-size: 0.8em;
+    font-size: map-get($tamañofuente, pequena);
     z-index: 10;
 }
 

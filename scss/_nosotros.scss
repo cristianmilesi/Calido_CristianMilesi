@@ -5,7 +5,7 @@
     margin: 10px auto;
     padding: 10px;
     border-radius: 2%;
-    background-color: $color-oscuro;
+    background-color: map-get($colores, oscuro);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .Imágenes_Nosotros_Logo{
@@ -13,11 +13,11 @@
     margin: 10px auto;
     padding: 10px;
     border-radius: 2%;
-    background-color: $color-oscuro;
+    background-color: map-get($colores, oscuro);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .Texto_nosotros{
-    font-size: $fuente-grande;
+    font-size:map-get($tamañofuente, grande );
     text-align:center;
     padding: 15px;
 }

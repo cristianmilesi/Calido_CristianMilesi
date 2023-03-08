@@ -1,14 +1,14 @@
 /*Main de todas las páginas*/ 
 
 .FondoPantalla {
-    background-color: $color-claro ;
+    background-color: map-get($colores, claro) ;
 }
 
 /*Página principal*/
 
 .título{
     padding: 10px;
-    font-size: $fuente-grande;
+    font-size: map-get($tamañofuente, grande);
     font-weight: 700;
     text-align: center;
 }
@@ -20,11 +20,11 @@
     border-radius: 2%;
     width: 100%;
     object-fit:contain;
-    background-color: $color-oscuro;
+    background-color: map-get($colores, oscuro);
     justify-content: center;
 }
     
 .textoInicio{
-    font-size: $fuente-grande;
+    font-size: map-get($tamañofuente, grande );
     text-align: center;
 }
