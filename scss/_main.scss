@@ -1,30 +1,71 @@
-/*Main de todas las páginas*/ 
-
-.FondoPantalla {
-    background-color: map-get($colores, claro) ;
-}
-
 /*Página principal*/
 
-.título{
-    padding: 10px;
-    font-size: map-get($tamañofuente, grande);
-    font-weight: 700;
-    text-align: center;
+.FondoPantallaMain {
+    background-color: map-get($colores, claro) ;
+    .container{
+        .row{
+            .título_main{
+                padding: 10px auto;
+                font-size: map-get($tamañofuente, grande);
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        .row{
+            .col-md-6{
+                .carousel{
+                    .contenedorImagen{
+                        padding: 10px;
+                        border-radius: 2%;
+                        width: 100%;
+                        object-fit:contain;
+                        background-color: map-get($colores, oscuro);
+                        justify-content: center;
+                        .carousel-item{
+                            .d-block{
+
+                            }
+                        }
+                    }
+                }
+            }
+            .textoInicio{
+                font-size: map-get($tamañofuente, grande);
+                text-align: center;
+            }
+        }
+    }
 }
 
-/*Contenedor para imagenes y carrousel */ 
+@media screen and (min-width:769px){
+    .FondoPantallaMain {
+        .container{
+            .row{
+                .título_main{
+                    font-size: map-get($tamañofuente, muygrande);
+                    text-align: center;
+                    margin: 0px auto;
+                }
+            }
+            .row{
+                .col-md-6{
+                    .carousel{
+                        .contenedorImagen{                            
+                            .carousel-item{
+                                .d-block{    
+                                }
+                            }
+                        }
+                    }
+                }
+                .textoInicio{
+                    text-align:justify;
+                    font-size: map-get($tamañofuente, casigrande);
+                }
+            }
+        }
+    }    
 
-.contenedorImagen {
-    padding: 10px;
-    border-radius: 2%;
-    width: 100%;
-    object-fit:contain;
-    background-color: map-get($colores, oscuro);
-    justify-content: center;
 }
-    
-.textoInicio{
-    font-size: map-get($tamañofuente, grande );
-    text-align: center;
-}
+
+

@@ -1,21 +1,25 @@
 /*Icóno con link a Whatsapp*/
-.Whatsapp {
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    right: 20px;
-    bottom: 50px;
-    background-color:map-get($colores, oscuro) ;
-    border-radius: 50%;
-    text-align: center;
-    color: $fuente-clara;
-    font-size: map-get($tamañofuente, pequena);
-    z-index: 10;
+.container{
+    .Whatsapp {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        right: 20px;
+        bottom: 50px;
+        background-color:map-get($colores, oscuro) ;
+        border-radius: 50%;
+        text-align: center;
+        color: $fuente-clara;
+        font-size: map-get($tamañofuente, pequena);
+        z-index: 10;
+        .WhatsappFlotante {
+            width: 50px;
+            height: 50px;
+            margin: 10px 0px auto;
+            align-items: center;
+        }
+    }
 }
 
-.WhatsappFlotante {
-    width: 50px;
-    height: 50px;
-    margin: 10px 0px auto;
-    align-items: center;
-}
+
+

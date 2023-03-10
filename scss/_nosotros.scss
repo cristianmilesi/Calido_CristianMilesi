@@ -1,5 +1,123 @@
 /* ELEMENTOS DE PÁGINA "NOSOTROS" */ 
+.FondoPantallaMain{
+    .container{
+        .row{
+            .título_nosotros{
+                padding: 10px auto;
+                font-size: map-get($tamañofuente, grande);
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        .row{
+            .col-md-6{
+                .Imágenes_Nosotros_Logo{
+                    width: 90%;
+                    margin: 10px auto;
+                    padding: 10px;
+                    border-radius: 2%;
+                    background-color: map-get($colores, oscuro);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+            }
+            .Texto_nosotros{
+                font-size:map-get($tamañofuente, casigrande );
+                text-align:center;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
 
+        .row{
+            .col-md-6{
+                .Imágenes_Nosotros{
+                    width: 90%;
+                    margin: 10px auto;
+                    padding: 10px;
+                    border-radius: 2%;
+                    background-color: map-get($colores, oscuro);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+            }
+            .col-md-3{
+                .Imágenes_Nosotros{
+                    width: 90%;
+                    margin: 10px auto;
+                    padding: 10px;
+                    border-radius: 2%;
+                    background-color: map-get($colores, oscuro);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+            }
+            .col-md-3{
+                .Imágenes_Nosotros{
+                    width: 90%;
+                    margin: 10px auto;
+                    padding: 10px;
+                    border-radius: 2%;
+                    background-color: map-get($colores, oscuro);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width:769px){
+    .FondoPantallaMain {
+        .container{
+            .row{
+                .título_nosotros{
+                    font-size: map-get($tamañofuente, muygrande);
+                    text-align: center;
+                    margin: 0px auto;
+                }
+            }
+
+            .row{
+                .col-md-6{
+                    .Imágenes_Nosotros_Logo{
+                        width: 80%;
+                        align-items: center;
+                        margin: 20px ;
+                    }
+                }
+                .Texto_nosotros{
+                    text-align:justify;
+                    width: 50%;
+                    padding: 15px;
+                    font-size: map-get($tamañofuente, casigrande);
+                }
+            }
+    
+            .row{
+                .col-md-6{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+                .col-md-3{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+                .col-md-3{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+
+/*
 .Imágenes_Nosotros{
     width: 75%;
     margin: 10px auto;
@@ -25,3 +143,4 @@
 .nosotros_prueba {
     font-size: large;
 }
+*/

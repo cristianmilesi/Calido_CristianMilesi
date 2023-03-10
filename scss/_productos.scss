@@ -1,36 +1,87 @@
 /* Elementos de Página "PRODUCTOS"*/ 
-.tarjeta{
-    width: 90%;
-    height: auto;
-    border-radius: 2%;
-    background-color: map-get($colores, oscuro);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+.FondoPantallaMain{
+    .container{
+        .row{
+            .título_principal{
+                padding: 10px auto;
+                font-size: map-get($tamañofuente, grande);
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+        .row{
+            .col-md-4{
+                .tarjeta{
+                    width: 90%;
+                    height: auto;
+                    border-radius: 2%;
+                    background-color: map-get($colores, oscuro);
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    .título_producto{
+                        color: rgb(254, 254, 254);
+                        font-size: map-get($tamañofuente, casigrande);
+                        font-weight: 600;
+                        margin: 5px auto;
+                    }
+                    .imagenProducto{
+                        width: 90%;  
+                    }
+                    .parrafoproducto{
+                        .botón_producto{
+                            color: $fuente-oscura;
+                            background-color: map-get($map: $colores, $key: claro);
+                            border-color: rgba(91, 91, 91, 0.696);
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                    .collapse{
+                        .texto_producto{
+                            font-size: map-get($tamañofuente, normal); 
+                            width: 90%; 
+                            margin: 5px auto;
+                            padding: 5px;
+                            background-color: rgba(255, 255, 255, 0.566);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
-.título_producto {
-    color: #fff1d1;
-    font-size: map-get($tamañofuente, grande);
-    font-weight: 600;
-    margin: 5px auto;
+@media screen and (min-width:769px) { 
+    .FondoPantallaMain{
+        .container{
+            .row{
+                .título_principal{
+                    font-size: map-get($tamañofuente, muygrande);
+                }
+            }
+            .row{
+                .col-md-4{
+                    .tarjeta{
+                        .título_producto{
+                            font-size: map-get($tamañofuente, grande);
+                        }
+                        .imagenProducto{ 
+                        }
+                        .p{
+                            .botón_producto{
+                            }
+                        }
+                        .collapse{
+                            .texto_producto{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
 }
 
-.imagenProducto{
-    width: 90%;
-}
-
-.texto_producto{
-    font-size: map-get($tamañofuente, normal); 
-    width: 90%;
-    margin: 5px auto;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.botón_producto{
-    color: $fuente-oscura;
-    background-color: map-get($map: $colores, $key: claro);
-    border-color: rgba(91, 91, 91, 0.696);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}

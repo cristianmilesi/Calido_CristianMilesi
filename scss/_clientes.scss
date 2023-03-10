@@ -1,27 +1,116 @@
 /*Elementos de Página CLIENTES*/
 
-.contenedorClientes {
-    width: 90%;
-    padding: 10px;
-    border-radius: 2%;
-    object-fit:contain;
-    background-color: map-get($colores, oscuro);
-    justify-content: center;
+.FondoPantallaMain{
+    .container{
+        .título_clientes{
+            padding: 10px auto;
+            font-size: map-get($tamañofuente, grande);
+            font-weight: 700;
+            text-align: center;
+        }
+        .sectionclientes{
+            .bordeFila{
+                border: #fff1d1;
+                border-radius: 2%;
+                border-style: dotted;
+                .col-md-6{
+                    .contenedorClientes{
+                        width: 90%;
+                        padding: 10px;
+                        border-radius: 2%;
+                        object-fit:contain;
+                        background-color: map-get($colores, oscuro);
+                        justify-content: center;
+                    }
+                }
+                .textoClientes{
+                    font-size: map-get($tamañofuente, normal);
+                    color: $fuente-clara;
+                    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
+                    text-align:center;
+                    align-content: center;
+                    .título_cliente{
+                        color: rgb(254, 254, 254);
+                        font-size: map-get($tamañofuente, casigrande);
+                        font-weight: 600;
+                        margin: 5px auto;
+                    }
+                    .cursiva{
+                        font-style: oblique;
+                    }
+                }
+            }
+
+            .ClientePar{
+                .col-md-6{
+                    .contenedorClientes{
+                    }
+                }
+                .textoClientes{
+                    .título_cliente{
+                    }
+                    .cursiva{
+                    }
+                }
+            }
+        }
+    }
 }
 
-.bordeFila{
-    border: #fff1d1;
-    border-radius: 2%;
-    border-style: dotted;
-}
-.textoClientes{
-    font-size: map-get($tamañofuente, grande);
-    color: $fuente-clara;
-    text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
-    text-align:center;
-    align-content: center;
+
+@media screen and (min-width:769px) {
+    .FondoPantallaMain{
+        .container{
+            .título_clientes{
+                font-size: map-get($tamañofuente, muygrande);
+                margin: 10px;
+            }
+            .sectionclientes{
+                .bordeFila{
+                    border: #fff1d1;
+                    border-radius: 2%;
+                    border-style: dotted;
+                    .col-md-6{
+                        .contenedorClientes{
+                            width:auto;
+                            height: 50vh;
+                        }
+                    }
+                    .textoClientes{
+                        font-size: map-get($tamañofuente, grande);
+                        color: $fuente-clara;
+                        text-shadow: 2px 1px 1px rgba(125,128,122,0.78);
+                        text-align:left;
+                        padding: 10px auto;
+                        .título_cliente{
+                            color: rgb(254, 254, 254);
+                            font-size: map-get($tamañofuente, grande);
+                            font-weight: 600;
+                            margin: 5px auto;
+                        }
+                        .cursiva{
+                            font-style: oblique;
+                        }
+                    }
+                }
+
+                .ClientePar{
+                    flex-direction: row-reverse;
+                    .col-md-6{
+                        .contenedorClientes{
+                        }
+                    }
+                    .textoClientes{
+                        .título_cliente{
+                        }
+                        .cursiva{ 
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
 
-.cursiva{
-    font-style: oblique;
-}
+

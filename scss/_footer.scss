@@ -1,33 +1,57 @@
 /*Pie de Página*/ 
-
 .PieDePagina{
     background-image: url(../assets/img/Banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-content: flex-end;
+    .LogoFooter{
+        border-image: none;
+        margin: 0px auto;
+        width: 15%;
     }
-
-.LogoFooter{
-    border-image: none;
-    margin: 0px auto;
-    width: 15%;
-   }
-
-.redesSociales{
-    font-size: map-get($tamañofuente, pequena);    
-    text-align: center;
-    color: $fuente-clara;
+    .redesSociales{
+        font-size: map-get($tamañofuente, pequena);    
+        text-align: center;
+        color: $fuente-clara;
+        .col-sm-12{
+            .ancla{
+                text-decoration: none;
+                margin: 5px;
+             }
+            .iconoRedes{
+                text-decoration: none !important;
+                font-size: map-get($tamañofuente, normal);
+                color: map-get($colores, claro);
+                display: inline-block;
+            }
+        }
+    }
 }
 
-.ancla{
-    text-decoration: none;
-    margin: 5px;
+@media screen and (min-width:769px) {
+    .PieDePagina{
+        .LogoFooter{
+            border-image: none;
+            margin: 0px auto;
+            width: 7.5%;
+        }
+        .redesSociales{
+            font-size: map-get($tamañofuente, normal);    
+            .col-sm-12{
+                .ancla{
+                    text-decoration: none;
+                    margin: 5px;
+                }
+                .iconoRedes{
+                    text-decoration: none !important;
+                    font-size: map-get($tamañofuente, grande);
+                    color: map-get($colores, claro);
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }
 
-.iconoRedes{
-    text-decoration: none !important;
-    font-size: map-get($tamañofuente, normal);
-    color: map-get($colores, claro);
-    display: inline-block;
-    }
+

@@ -1,6 +1,64 @@
 /*Elementos de CONTACTO*/ 
 
+.FondoPantallaMain{
+    .container{
+        .títuloContacto{
+            padding: 10px auto;
+            font-size: map-get($tamañofuente, grande);
+            font-weight: 700;
+            text-align: center;
+        }
+        .section_contacto{
+            .parrafo_contacto{
+            }
+            
+            .row{
+                .iconoRedesContacto{
+                    text-decoration: none !important;
+                    font-size: map-get($tamañofuente, extragrande);
+                    color: map-get($colores, intermedio);
+                    display: inline-block;
+                }
+                .textoRedesContacto{
+                    display: inline-block;
+                }
+            }
+        }
+
+        .row{
+            .iconoRedesContacto{
+                text-decoration: none !important;
+                font-size: map-get($tamañofuente, extragrande);
+                color: map-get($colores, intermedio);
+                display: inline-block;
+            }
+            .textoRedesContacto{
+                display: inline-block;
+            }
+        }
+
+    }
+
+
+
+}
+/*
 .iconoRedesContacto{
+    text-decoration: none !important;
     font-size: map-get($tamañofuente, extragrande);
     color: map-get($colores, intermedio);
+    display: inline-block;
     }
+
+    .textoRedesContacto{
+        display: inline-block;
+
+    }
+/*
+    .iconoRedes{
+        text-decoration: none !important;
+        font-size: map-get($tamañofuente, grande);
+        color: map-get($colores, claro);
+        display: inline-block;
+
+*/

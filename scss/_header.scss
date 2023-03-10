@@ -1,41 +1,87 @@
 /*Header*/ 
-
-.encabezado {
-    background-image: url(../assets/img/Banner.png);
-    background-color:rgba(255, 249, 240, 0);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contenedor_logo{
-    width: 20%;
-    padding: 5px auto;
-}
-
-.logo_encabezado{
-    border-image: none;
-    width: 100%;
-    z-index: 5;
-}
-
-.linkNav {
-    color: rgb(255, 255, 255) !important ; 
-    text-decoration:none ;
-    font-size: map-get($map:$tamañofuente, $key:grande);
-    font-weight: 600;
-    border-radius: 5px;
-    align-items: center;
-    justify-items: center;
-}
-
-.linkNav:hover{
-    color: map-get($colores, oscuro ) !important; 
-    border-radius: 5px;
+.FondoPantallaMain {
     background-color: map-get($colores, claro);
+    .encabezado{
+        background-image: url(../assets/img/Banner.png);
+        background-color:rgba(255, 249, 240, 0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .navbar{
+            .container-fluid{
+                .contenedor_logo{
+                    width: 20%;
+                    padding: 5px auto;
+                    .logo_encabezado{
+                        border-image: none;
+                        width: 100%;
+                        z-index: 5; 
+                    }  
+                }
+                .navbar-toggler{
+                    .navbar-toggler-icon{
+
+                    }
+                }
+                .collapse{
+                    .Nav_pages{
+                        width: 100%;
+                        justify-content: space-evenly;
+                        .nav-item{
+                            .linkNav{
+                                color: rgb(255, 255, 255) !important ; 
+                                text-decoration:none ;
+                                font-size: map-get($map:$tamañofuente, $key:grande);
+                                font-weight: 600;
+                                border-radius: 5px;
+                                align-items: center;
+                                justify-items: center;
+                                &:hover{
+                                    color: map-get($colores, oscuro ) !important; 
+                                    border-radius: 5px;
+                                    background-color: map-get($colores, claro);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
-.Nav_pages{
-    width: 100%;
-    justify-content: space-evenly;
+@media screen and (min-width:769px){
+    .FondoPantallaMain{
+        .encabezado {
+            position: sticky;
+            top: 0px;
+            z-index: 5;
+            .navbar{
+                .container-fluid{
+                    .contenedor_logo{
+                        width: 10%;
+                        padding: 5px auto;
+                        .logo_encabezado{
+
+                        }
+                    }
+                    .navbar-toggler{
+                        .navbar-toggler-icon{
+                        }
+                    }
+                    .collapse{
+                        .Nav_pages{ 
+                            .nav-item{
+                                .linkNav{
+                                    font-size: map-get($tamañofuente, extragrande);
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
