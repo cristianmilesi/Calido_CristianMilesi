@@ -297,44 +297,110 @@ $fuente-muygrande: 2em;
   font-weight: 700;
   text-align: center; }
 
-.FondoPantallaMain .container .section_contacto .row .iconoRedesContacto {
+.FondoPantallaMain .container .section_contacto .d-flex .link_contacto {
+  text-decoration: none !important; }
+  .FondoPantallaMain .container .section_contacto .d-flex .link_contacto .iconoRedesContacto {
+    font-size: 2em;
+    color: #f15942;
+    display: inline-block;
+    margin: 5px; }
+
+.FondoPantallaMain .container .section_contacto .d-flex .textoRedesContacto {
+  text-decoration: none !important;
+  font-size: 1.5em;
+  color: #323232;
+  margin: 5px; }
+
+.FondoPantallaMain .container .section_contacto .row .link_contacto .iconoRedesContacto {
   text-decoration: none !important;
   font-size: 1.75em;
-  color: #f15942;
-  display: inline-block; }
+  color: #f15942; }
 
 .FondoPantallaMain .container .section_contacto .row .textoRedesContacto {
-  display: inline-block; }
-
-.FondoPantallaMain .container .row .iconoRedesContacto {
   text-decoration: none !important;
-  font-size: 1.75em;
-  color: #f15942;
-  display: inline-block; }
+  font-size: 1.75em; }
 
-.FondoPantallaMain .container .row .textoRedesContacto {
-  display: inline-block; }
+.FondoPantallaMain .container .section_contacto .m-2 .formulario {
+  border-color: #f15942a2;
+  border-style: dotted; }
+  .FondoPantallaMain .container .section_contacto .m-2 .formulario .col-md-6 .etiqueta_campo {
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 5px; }
+  .FondoPantallaMain .container .section_contacto .m-2 .formulario .col-md-6 .campo {
+    margin: 0px 5px; }
+  .FondoPantallaMain .container .section_contacto .m-2 .formulario .col-12 .etiqueta_campo {
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 5px; }
+  .FondoPantallaMain .container .section_contacto .m-2 .formulario .col-12 .campo {
+    margin: 0px 5px; }
+  .FondoPantallaMain .container .section_contacto .m-2 .formulario .col-12 .botón_contacto {
+    background-color: #f15942a2;
+    color: white; }
+
+@media screen and (min-width: 769px) {
+  .FondoPantallaMain .container .row .título_Contacto {
+    font-size: 2em;
+    text-align: center;
+    margin: 0px auto; } }
 
 /*
-.iconoRedesContacto{
-    text-decoration: none !important;
-    font-size: map-get($tamañofuente, extragrande);
-    color: map-get($colores, intermedio);
-    display: inline-block;
-    }
-
-    .textoRedesContacto{
-        display: inline-block;
-
-    }
-/*
-    .iconoRedes{
-        text-decoration: none !important;
-        font-size: map-get($tamañofuente, grande);
-        color: map-get($colores, claro);
-        display: inline-block;
-
+            .row{
+                .col-md-6{
+                    .Imágenes_Nosotros_Logo{
+                        width: 80%;
+                        align-items: center;
+                        margin: 20px ;
+                    }
+                }
+                .Texto_nosotros{
+                    text-align:justify;
+                    width: 50%;
+                    padding: 15px;
+                    font-size: map-get($tamañofuente, casigrande);
+                }
+            }
+    
+            .row{
+                .col-md-6{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+                .col-md-3{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+                .col-md-3{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+            }
+        }
+    }   
+}
 */
+.FondoPantallaMain .container .row .col-md-6 .Imágen_error {
+  width: 75%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #f15942; }
+
+.FondoPantallaMain .container .row .Texto_error {
+  font-size: 1.5em;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center; }
+
 /*Icóno con link a Whatsapp*/
 .container .Whatsapp {
   width: 100px;

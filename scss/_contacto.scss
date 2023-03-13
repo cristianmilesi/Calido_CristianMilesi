@@ -1,6 +1,6 @@
 /*Elementos de CONTACTO*/ 
 
-.FondoPantallaMain{
+.FondoPantallaMain{ 
     .container{
         .títuloContacto{
             padding: 10px auto;
@@ -12,53 +12,145 @@
             .parrafo_contacto{
             }
             
-            .row{
-                .iconoRedesContacto{
+            .d-flex{
+                .link_contacto{
                     text-decoration: none !important;
-                    font-size: map-get($tamañofuente, extragrande);
-                    color: map-get($colores, intermedio);
-                    display: inline-block;
+                    .iconoRedesContacto{
+                            font-size: map-get($tamañofuente, muygrande);
+                            color: map-get($colores, intermedio);
+                            display: inline-block;
+                            margin: 5px;
+                    }
+                }
+                
+                .textoRedesContacto{
+                    text-decoration: none !important;
+                    font-size: map-get($tamañofuente, grande);
+                    color: $fuente-oscura;
+                    margin: 5px;
+                }
+            }
+        
+
+            .row{
+                .link_contacto {
+                                        
+                    .iconoRedesContacto{
+                        text-decoration: none !important;
+                        font-size: map-get($tamañofuente, extragrande);
+                        color: map-get($colores, intermedio); 
+                    }
                 }
                 .textoRedesContacto{
-                    display: inline-block;
+                    text-decoration: none !important;
+                    font-size: map-get($tamañofuente, extragrande);
+
+                }
+            }
+
+            
+        
+
+        }
+
+        .section_contacto{ 
+            .parrafo_contacto{
+
+            }
+            .m-2{ 
+                .formulario{
+                    border-color: map-get($colores, oscuro);
+                    border-style: dotted;
+                    .col-md-6{ 
+                            .etiqueta_campo{
+                                font-size: map-get($tamañofuente, normal);
+                                font-weight: 600;
+                                margin-left: 5px;
+                            }
+                            .campo{
+                               margin: 0px 5px;
+                            }
+        
+                    }
+                    .col-12{
+                        .etiqueta_campo{
+                            font-size: map-get($tamañofuente, normal);
+                            font-weight: 600;
+                            margin-left: 5px;
+                        }
+                        .campo{
+                           margin: 0px 5px;
+                        }
+                    }
+                    .col-12{
+                        .botón_contacto{
+                            background-color: map-get($colores, oscuro);
+                            color: $fuente_clara
+                        }
+                    }
                 }
             }
         }
+        
 
-        .row{
-            .iconoRedesContacto{
-                text-decoration: none !important;
-                font-size: map-get($tamañofuente, extragrande);
-                color: map-get($colores, intermedio);
-                display: inline-block;
-            }
-            .textoRedesContacto{
-                display: inline-block;
+    }
+
+}
+
+
+@media screen and (min-width:769px){
+    .FondoPantallaMain {
+        .container{
+            .row{
+                .título_Contacto{
+                    font-size: map-get($tamañofuente, muygrande);
+                    text-align: center;
+                    margin: 0px auto;
+                }
             }
         }
 
     }
-
-
 
 }
 /*
-.iconoRedesContacto{
-    text-decoration: none !important;
-    font-size: map-get($tamañofuente, extragrande);
-    color: map-get($colores, intermedio);
-    display: inline-block;
-    }
-
-    .textoRedesContacto{
-        display: inline-block;
-
-    }
-/*
-    .iconoRedes{
-        text-decoration: none !important;
-        font-size: map-get($tamañofuente, grande);
-        color: map-get($colores, claro);
-        display: inline-block;
-
+            .row{
+                .col-md-6{
+                    .Imágenes_Nosotros_Logo{
+                        width: 80%;
+                        align-items: center;
+                        margin: 20px ;
+                    }
+                }
+                .Texto_nosotros{
+                    text-align:justify;
+                    width: 50%;
+                    padding: 15px;
+                    font-size: map-get($tamañofuente, casigrande);
+                }
+            }
+    
+            .row{
+                .col-md-6{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+                .col-md-3{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+                .col-md-3{
+                    .Imágenes_Nosotros{
+                        width: auto;
+                        height: 50vh;
+                    }
+                }
+            }
+        }
+    }   
+}
 */

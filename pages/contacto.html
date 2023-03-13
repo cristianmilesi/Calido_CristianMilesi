@@ -51,71 +51,76 @@
     </header>
 
     <main class="container">
-        <h1 class="títuloContacto">Contactate con nosotros</h1>
+      <h1 class="títuloContacto">Contactate con nosotros</h1>
 
-        <section class="section_contacto">
-          <p class="parrafo_contacto">Nuestro taller está ubicado en la ciudad de Concepción del Uruguay, Entre Ríos. <br> Podes contactarte con nosotros a traves de los siguientes medios</p>
+      <section class="section_contacto">
+        <p class="row parrafo_contacto">Nuestro taller está ubicado en la ciudad de Concepción del Uruguay, Entre Ríos. <br> Podes contactarte con nosotros a traves de los siguientes medios</p>
 
-          <div class="row">
-            <a href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedesContacto"></i></a>
-            <p class="textoRedesContacto">@calidomascotas.ok</p>
-          </div>
+        <div class="d-flex justify-content-center">
+          <a class="link_contacto" href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><i class="fa-brands fa-instagram iconoRedesContacto"></i></a>
+          <a class="textoRedesContacto" href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><p >@calidomascotas.ok</p></a>
+        </div>
 
-          <div class="row">
-            <a href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedesContacto"></i></a>
-            <p class="textoRedesContacto">/calidomascotas.ok</p>
-          </div>
+        <div class="d-flex justify-content-center">
+            <a class="link_contacto" href="https://www.facebook.com/calidoparana.ok" target="_blank"><i class= "fa-brands fa-square-facebook iconoRedesContacto"></i></a>
+            <a class="textoRedesContacto" href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><p>/calidomascotas.ok</p></a>
+        </div>
 
-          <div class="row">
-            <a href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedesContacto"></i></a>
-            <p class="textoRedesContacto">343-4622121</p>
-          </div>
+        <div class="d-flex justify-content-center">
+            <a class="link_contacto" href="https://wa.me/543434622121" target="_blank"><i class="fa-brands fa-whatsapp iconoRedesContacto"></i></a>
+            <a class="textoRedesContacto" href="https://www.instagram.com/calidomascotas.ok/" target="_blank"><p>343-4622121</p></a>
+        </div>
 
-          <div class="row">
-            <i class="fa-solid fa-envelope-open iconoRedesContacto"></i>
-            <p class="textoRedes">calido.objetos.ok@gmail.com</p>
-          </div>
-        </section>
+        <div class="d-flex justify-content-center">
+          <a class="link_contacto" href="mailto:calido.objetos.ok@gmail.com" target="_blank"><i class="fa-solid fa-envelope-open iconoRedesContacto"></i></a>
+          <a class="textoRedesContacto" href="mailto:calido.objetos.ok@gmail.com" target="_blank"><p>calido.objetos.ok@gmail.com</p></a>
+        </div>
+      </section>
 
         <!--Voy a cambiar este FORMULARIO por un Formulario de Bootstrap-->
 
-        <section>
-            <p></p> O completá el siguiente formulario y pronto te estaremos respondiendo:</p>
+      <section class="section_contacto">
+            <p class="parrafo_contacto"> O completá el siguiente formulario y pronto te estaremos respondiendo:</p>
 
-            <div>
-                <form action="" >
-                     <div>
-                         
-                         <input type="text" placeholder="Nombre" required>
-                     </div>
-                     <div>
-                        
-                         <input type="text" placeholder="Apellido">
-                     </div>
-                     <div>
-                       
-                         <input type="email" placeholder="ejemplo@gmail.com">
-                     </div>
-                     <div>
-                         <label for="">Indique su Telefono</label>
-                         <input type="tel">
-                     </div>
-                     <div>
-                         <label for="">Indique su Mensaje</label>
-                         <textarea name="" id="" cols="30" rows="10"></textarea>
-                     </div>
-                     <div>
-                         <input type="submit" value="Enviar Formulario">
-                         <input type="reset" name="" id="" value="Limpiar">
-                     </div>
-                     
-                  </form>
- 
-             </div>
+            <div class="m-2">
+              <form class="row g-3 formulario" action="" >
+                
+                <div class="col-md-6">
+                    <label for="Nombre" class="form-label etiqueta_campo">Nombre</label>
+                    <input class="form-control campo" type="text" placeholder="Nombre" id="Nombre" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="Apellido" class="form-label etiqueta_campo">Apellido</label>
+                  <input class="form-control campo" type="text" placeholder="Apellido" id="Apellido" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="Email" class="form-label etiqueta_campo">E-mail</label>
+                  <input class="form-control campo" type="email" placeholder="ejemplo@gmail.com" id="Email" required>
+                </div>
+              
+                <div class="col-12">
+                  <label for="Telefono" class="form-label etiqueta_campo">Teléfono</label>
+                  <input class="form-control campo" type="tel" placeholder="343-0000000" id="Telefono" required>
+                </div>
+              
+                <div class="col-12">
+                    <label for="Mensaje" class="form-label etiqueta_campo">Escribínos tu consulta</label>
+                    <textarea class="form-control campo" name="" id="Mensaje" cols="30" rows="10"></textarea>
+                  </div>
+
+                <div class="col-12 -flex justify-content-center">
+                    <a href="./error.html"><button type="submit" class="btn btn-primary botón_contacto">Enviar</button></a>
+                    
+                  </div>
+                </div>
+              </form>  
+                    
+            </div>
 
         </section>
 
-        <section>
+        <section class="d-flex justify-content-center m-3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53855.36169655253!2d-58.30505239137107!3d-32.473758802382804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afdb005dbc939d%3A0x3c8a23c6cb1334b2!2sConcepci%C3%B3n%20del%20Uruguay%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1674960098509!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
             
         </section>

@@ -1,0 +1,25 @@
+.FondoPantallaMain{
+    .container{
+        .row {
+            .col-md-6{
+                .Imágen_error{
+                    width: 75%;
+                    margin: 20px auto;
+                    padding: 10px;
+                    border-radius:50%;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    background-color: map-get($colores, intermedio);
+                }
+                
+            }
+            .Texto_error{
+                font-size: map-get($tamañofuente, grande );
+                margin: 20px auto;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+            }
+        }
+
+    }
+}
