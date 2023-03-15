@@ -69,7 +69,8 @@ $fuente-muygrande: 2em;
 
 /*Página principal*/
 .FondoPantallaMain {
-  background-color: #FFD060; }
+  background-color: #FFD060;
+  height: 85vh; }
   .FondoPantallaMain .container .row .título_main {
     padding: 10px auto;
     font-size: 1.5em;

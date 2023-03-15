@@ -2,6 +2,7 @@
 
 .FondoPantallaMain {
     background-color: map-get($colores, claro) ;
+    height: 85vh;
     .container{
         .row{
             .título_main{
