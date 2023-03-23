@@ -11,18 +11,17 @@
   src: url("../assets/fonts/SourceSans/SourceSansPro-Regular.ttf"); }
 
 /*Variables*/
-/*
-$color-claro: #FFD060;
-$color-oscuro: #f15942a2; 
-$color-intermedio: #f15942;
-*/
-/*
-$fuente-pequena:0.8em;
-$fuente-normal: 1em;
-$fuente-grande: 1.5em;
-$fuente-extragrande: 1.75em;
-$fuente-muygrande: 2em;
-*/
+/*Mapas*/
+/*Mixin*/
+/*Animación para logo de Header*/
+@keyframes pulso {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.15); }
+  100% {
+    transform: scale(1); } }
+
 /*Header*/
 .FondoPantallaMain {
   background-color: #FFD060; }
@@ -38,7 +37,11 @@ $fuente-muygrande: 2em;
       .FondoPantallaMain .encabezado .navbar .container-fluid .contenedor_logo .logo_encabezado {
         border-image: none;
         width: 100%;
-        z-index: 5; }
+        z-index: 5;
+        animation: pulso 3s;
+        animation-delay: 1s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite; }
     .FondoPantallaMain .encabezado .navbar .container-fluid .collapse .Nav_pages {
       width: 100%;
       justify-content: space-evenly; }
@@ -105,7 +108,10 @@ $fuente-muygrande: 2em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px auto;
   padding: 10px;
-  align-items: center; }
+  align-items: center;
+  transition: 1s; }
+  .FondoPantallaMain .container .row .col-md-6 .Imágenes_Nosotros_Logo:hover {
+    transform: scale(1.1); }
 
 .FondoPantallaMain .container .row .Texto_nosotros {
   font-size: 1.2em;
@@ -119,7 +125,10 @@ $fuente-muygrande: 2em;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px auto;
-  padding: 10px; }
+  padding: 10px;
+  transition: 1s; }
+  .FondoPantallaMain .container .row .col-md-6 .Imágenes_Nosotros:hover {
+    transform: scale(1.1); }
 
 .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros {
   background-color: #f15942a2;
@@ -127,7 +136,10 @@ $fuente-muygrande: 2em;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px auto;
-  padding: 10px; }
+  padding: 10px;
+  transition: 1s; }
+  .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros:hover {
+    transform: scale(1.1); }
 
 .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros {
   background-color: #f15942a2;
@@ -135,7 +147,10 @@ $fuente-muygrande: 2em;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px auto;
-  padding: 10px; }
+  padding: 10px;
+  transition: 1s; }
+  .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros:hover {
+    transform: scale(1.1); }
 
 @media screen and (min-width: 769px) {
   .FondoPantallaMain .container .row .título_nosotros {
@@ -162,33 +177,6 @@ $fuente-muygrande: 2em;
     width: auto;
     height: 45vh; } }
 
-/*
-.Imágenes_Nosotros{
-    width: 75%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 2%;
-    background-color: map-get($colores, oscuro);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.Imágenes_Nosotros_Logo{
-    width: 75%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 2%;
-    background-color: map-get($colores, oscuro);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.Texto_nosotros{
-    font-size:map-get($tamañofuente, grande );
-    text-align:center;
-    padding: 15px;
-}
-
-.nosotros_prueba {
-    font-size: large;
-}
-*/
 /* Elementos de Página "PRODUCTOS"*/
 .FondoPantallaMain .container .row .col-md-4 .tarjeta {
   background-color: #f15942a2;
@@ -206,8 +194,7 @@ $fuente-muygrande: 2em;
     margin: 5px auto;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .FondoPantallaMain .container .row .col-md-4 .tarjeta .contenedorProducto {
-    width: 320px;
-    height: 250px;
+    width: 90%;
     overflow: hidden;
     margin: 10px auto; }
     .FondoPantallaMain .container .row .col-md-4 .tarjeta .contenedorProducto .imagenProducto {
@@ -285,31 +272,33 @@ $fuente-muygrande: 2em;
       font-style: oblique; }
 
 @media screen and (min-width: 769px) {
-  .FondoPantallaMain .container .título_clientes {
-    font-size: 2em;
-    margin: 10px; }
-  .FondoPantallaMain .container .sectionclientes .bordeFila {
-    border: #fff1d1;
-    border-radius: 2%;
-    border-style: dotted; }
-    .FondoPantallaMain .container .sectionclientes .bordeFila .col-md-6 .contenedorClientes {
-      width: auto;
-      height: 50vh; }
-    .FondoPantallaMain .container .sectionclientes .bordeFila .textoClientes {
-      font-size: 1.5em;
-      color: white;
-      text-shadow: 2px 1px 1px rgba(125, 128, 122, 0.78);
-      text-align: left;
-      padding: 10px auto; }
-      .FondoPantallaMain .container .sectionclientes .bordeFila .textoClientes .título_cliente {
-        color: #fefefe;
+  .FondoPantallaMain .ClientesPage {
+    overflow: hidden; }
+    .FondoPantallaMain .ClientesPage .título_clientes {
+      font-size: 2em;
+      margin: 10px; }
+    .FondoPantallaMain .ClientesPage .sectionclientes .bordeFila {
+      border: #fff1d1;
+      border-radius: 2%;
+      border-style: dotted; }
+      .FondoPantallaMain .ClientesPage .sectionclientes .bordeFila .col-md-6 .contenedorClientes {
+        width: auto;
+        height: 50vh; }
+      .FondoPantallaMain .ClientesPage .sectionclientes .bordeFila .textoClientes {
         font-size: 1.5em;
-        font-weight: 600;
-        margin: 5px auto; }
-      .FondoPantallaMain .container .sectionclientes .bordeFila .textoClientes .cursiva {
-        font-style: oblique; }
-  .FondoPantallaMain .container .sectionclientes .ClientePar {
-    flex-direction: row-reverse; } }
+        color: white;
+        text-shadow: 2px 1px 1px rgba(125, 128, 122, 0.78);
+        text-align: left;
+        padding: 10px auto; }
+        .FondoPantallaMain .ClientesPage .sectionclientes .bordeFila .textoClientes .título_cliente {
+          color: #fefefe;
+          font-size: 1.5em;
+          font-weight: 600;
+          margin: 5px auto; }
+        .FondoPantallaMain .ClientesPage .sectionclientes .bordeFila .textoClientes .cursiva {
+          font-style: oblique; }
+    .FondoPantallaMain .ClientesPage .sectionclientes .ClientePar {
+      flex-direction: row-reverse; } }
 
 /*Elementos de CONTACTO*/
 .FondoPantallaMain .container .títuloContacto {
@@ -378,47 +367,7 @@ $fuente-muygrande: 2em;
     font-size: 1.5em;
     margin: 30px auto; } }
 
-/*
-            .row{
-                .col-md-6{
-                    .Imágenes_Nosotros_Logo{
-                        width: 80%;
-                        align-items: center;
-                        margin: 20px ;
-                    }
-                }
-                .Texto_nosotros{
-                    text-align:justify;
-                    width: 50%;
-                    padding: 15px;
-                    font-size: map-get($tamañofuente, casigrande);
-                }
-            }
-    
-            .row{
-                .col-md-6{
-                    .Imágenes_Nosotros{
-                        width: auto;
-                        height: 50vh;
-                    }
-                }
-                .col-md-3{
-                    .Imágenes_Nosotros{
-                        width: auto;
-                        height: 50vh;
-                    }
-                }
-                .col-md-3{
-                    .Imágenes_Nosotros{
-                        width: auto;
-                        height: 50vh;
-                    }
-                }
-            }
-        }
-    }   
-}
-*/
+/*Página de ERROR*/
 .FondoPantallaMain .container .row .col-md-6 .Imágen_error {
   width: 75%;
   margin: 20px auto;
@@ -429,10 +378,19 @@ $fuente-muygrande: 2em;
 
 .FondoPantallaMain .container .row .Texto_error {
   font-size: 1.5em;
+  width: 90%;
   margin: 20px auto;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  align-self: center; }
+  justify-content: center; }
+
+@media screen and (min-width: 769px) {
+  .FondoPantallaMain .container .row .Texto_error {
+    font-size: 1.5em;
+    width: 50%;
+    margin: 150px auto;
+    text-align: justify;
+    align-items: center; } }
 
 /*Icóno con link a Whatsapp*/
 .container .Whatsapp {
@@ -460,10 +418,10 @@ $fuente-muygrande: 2em;
   background-repeat: no-repeat;
   background-size: cover;
   align-content: flex-end; }
-  .PieDePagina .LogoFooter {
+  .PieDePagina .row .LogoFooter {
     border-image: none;
     margin: 0px auto;
-    width: 15%; }
+    width: 20%; }
   .PieDePagina .redesSociales {
     font-size: 0.8em;
     text-align: center;
@@ -478,10 +436,10 @@ $fuente-muygrande: 2em;
       display: inline-block; }
 
 @media screen and (min-width: 769px) {
-  .PieDePagina .LogoFooter {
+  .PieDePagina .row .LogoFooter {
     border-image: none;
     margin: 0px auto;
-    width: 7.5%; }
+    width: 8%; }
   .PieDePagina .redesSociales {
     font-size: 1em; }
     .PieDePagina .redesSociales .col-sm-12 .ancla {

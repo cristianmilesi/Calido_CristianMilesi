@@ -60,7 +60,8 @@
 
 @media screen and (min-width:769px) {
     .FondoPantallaMain{
-        .container{
+        .ClientesPage{
+            overflow: hidden;
             .título_clientes{
                 font-size: map-get($tamañofuente, muygrande);
                 margin: 10px;

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calido - Clientes</title>
+    <title>Cálido: Clientes</title>
     <meta name="description" content="Cálido: los clientes avalan nuestros productos">
     <meta name="keywords" content="mascotas, perros, gatos, medalla, medallita, collar, bandana, accesorios, diseño, emprendimiento">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../assets/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
@@ -48,12 +49,12 @@
     </header>
 
 
-    <main class="container">
+    <main class="container ClientesPage">
         <h1 class="título_clientes">Los clientes avalan nuestro trabajo</h1>
 
-        <!--En esta sección pondría fotos de mascotas con sus collares y accesorios. Agregué ademas agregar una especie de opinión ficticia de cada mascota, pero lo veré para mas adelante-->
+        <!--Sección con "opiniones" de los clientes. Se aplicó AOS para las animaciones-->
         <section class="sectionclientes">
-            <div class="row m-2 p-2 d-flex bordeFila">
+            <div data-aos="fade-left" data-aos-duration="3000" data-aos-offset="300" class="row my-4 p-2 d-flex bordeFila">
                 <div class="col-md-6 col-sm-12 d-flex justify-content-center">
                     <img class="contenedorClientes" src="../assets/img/Clientes/Cliente 1 Zoe.png" alt="Mascota 1">
                 </div>
@@ -65,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="row m-2 p-2 d-flex bordeFila ClientePar">
+            <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="200" class="row my-4 p-2 d-flex bordeFila ClientePar">
                 
                 <div class="col-md-6 col-sm-12 d-flex justify-content-center">
                     <img class="contenedorClientes" src="../assets/img/Clientes/Cliente 2 Mora.png" alt="Mascota 2">
@@ -79,7 +80,7 @@
 
             </div>
 
-            <div class="row m-2 p-2 d-flex bordeFila">
+            <div data-aos="fade-left" data-aos-duration="2000" data-aos-offset="200" class="row my-4 p-2 d-flex bordeFila">
                 <div class="col-md-6 col-sm-12 d-flex justify-content-center">
                     <img class="contenedorClientes" src="../assets/img/Clientes/Cliente 3 Laika.png" alt="Mascota 3">
                 </div>
@@ -87,10 +88,11 @@
                 <div class="textoClientes col-md-6 col-sm-12">
                     <h3 class="título_cliente">Laika</h3>
                     <p>7 años</p>
-                    <p class="cursiva">"Este collar está buenísimo. Ademas de ser cómodo me sirve para que mi humano se acuerde de sacarme a pasear. Gracias Cálido!"</p> 
+                    <p class="cursiva">"¡Este collar está buenísimo! Ademas de ser cómodo me sirve para que se acuerden de sacarme a pasear. Gracias Cálido!"</p> 
                 </div>
             </div>
-            <div class="row m-2 p-2 d-flex bordeFila row m-2 p-2 d-flex bordeFila ClientePar">
+
+            <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="200" class="row my-4 p-2 d-flex bordeFila row m-2 p-2 d-flex bordeFila ClientePar">
 
                 <div class="col-md-6 col-sm-12 d-flex justify-content-center">
                     <img class="contenedorClientes" src="../assets/img/Clientes/Clientes Cain y Lia .jpeg" alt="Mascota 4">
@@ -99,7 +101,7 @@
                 <div class="textoClientes col-md-6 col-sm-12">
                     <h3 class="título_cliente">Caín y Lía</h3>
                     <p> 4 meses</p>
-                    <p class="cursiva">"¡Ahora que tenemos nuestras medallitas nos pueden llamar sin confundirse nuestro nombre!"</p>
+                    <p class="cursiva">"Ahora que tenemos nuestras medallitas ¡Ya no se confunden mas nuestros nombres!"</p>
                 </div>
 
             </div>
@@ -113,7 +115,9 @@
     </main>
 
     <footer class="container-fluid pt-1 PieDePagina">
-        <img class="row LogoFooter mt-3" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
+        <a class="row" href="../index.html"> 
+            <img class="row LogoFooter mt-1" src="../assets/img/Logo Cálido Blanco SF.png" alt="Logo de Calido">
+        </a>
 
         <div class="redesSociales row ">
           <div class="col-sm-12 col-md-3">
@@ -135,11 +139,15 @@
         </div>
 
         <div class="redesSociales row">
-            <p>©Calido: Accesorios de diseño para mascotas. <br> -2023-</p>
+            <p>©Cálido: Accesorios de diseño para mascotas. <br> -2023-</p>
         </div>
 
     </footer>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

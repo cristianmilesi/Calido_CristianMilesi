@@ -13,6 +13,10 @@
                     margin: 10px auto;
                     padding: 10px;
                     align-items: center;
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
             .Texto_nosotros{
@@ -29,6 +33,10 @@
                     @include fondo(map-get($colores, oscuro), 90%);
                     margin: 10px auto;
                     padding: 10px;
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
             .col-md-3{
@@ -36,6 +44,10 @@
                     @include fondo(map-get($colores, oscuro), 90%);
                     margin: 10px auto;
                     padding: 10px;
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
             .col-md-3{
@@ -43,6 +55,10 @@
                     @include fondo(map-get($colores, oscuro), 90%);
                     margin: 10px auto;
                     padding: 10px;
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -102,32 +118,3 @@
     }   
 }
 
-
-
-/*
-.Imágenes_Nosotros{
-    width: 75%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 2%;
-    background-color: map-get($colores, oscuro);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.Imágenes_Nosotros_Logo{
-    width: 75%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 2%;
-    background-color: map-get($colores, oscuro);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.Texto_nosotros{
-    font-size:map-get($tamañofuente, grande );
-    text-align:center;
-    padding: 15px;
-}
-
-.nosotros_prueba {
-    font-size: large;
-}
-*/

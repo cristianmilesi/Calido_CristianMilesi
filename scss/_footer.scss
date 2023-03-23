@@ -5,11 +5,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-content: flex-end;
-    .LogoFooter{
-        border-image: none;
-        margin: 0px auto;
-        width: 15%;
+    .row{
+        .LogoFooter{
+            border-image: none;
+            margin: 0px auto;
+            width: 20%;
+        }
     }
+    
     .redesSociales{
         font-size: map-get($tamañofuente, pequena);    
         text-align: center;
@@ -31,11 +34,14 @@
 
 @media screen and (min-width:769px) {
     .PieDePagina{
-        .LogoFooter{
-            border-image: none;
-            margin: 0px auto;
-            width: 7.5%;
+        .row{
+            .LogoFooter{
+                border-image: none;
+                margin: 0px auto;
+                width: 8%;
+            }
         }
+        
         .redesSociales{
             font-size: map-get($tamañofuente, normal);    
             .col-sm-12{

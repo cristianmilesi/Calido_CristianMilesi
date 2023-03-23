@@ -15,7 +15,11 @@
                     .logo_encabezado{
                         border-image: none;
                         width: 100%;
-                        z-index: 5; 
+                        z-index: 5;
+                        animation: pulso 3s;
+                        animation-delay: 1s;
+                        animation-timing-function:ease; 
+                        animation-iteration-count: infinite;
                     }  
                 }
                 .navbar-toggler{

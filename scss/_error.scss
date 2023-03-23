@@ -1,3 +1,5 @@
+/*Página de ERROR*/ 
+
 .FondoPantallaMain{
     .container{
         .row {
@@ -14,12 +16,40 @@
             }
             .Texto_error{
                 font-size: map-get($tamañofuente, grande );
+                width: 90%;
                 margin: 20px auto;
+                text-align: center;
                 align-items: center;
                 justify-content: center;
-                align-self: center;
+                
             }
         }
 
     }
+}
+
+@media screen and (min-width:769px) {
+    .FondoPantallaMain{
+        .container{
+            .row {
+                .col-md-6{
+                    .Imágen_error{
+                    }
+                }
+                .Texto_error{
+                    font-size: map-get($tamañofuente, grande );
+                    width: 50%;
+                    margin: 150px auto;
+                    text-align: justify;
+                    align-items: center;
+                    
+                }
+            }
+    
+        }
+    }
+
+
+
+
 }
