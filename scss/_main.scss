@@ -16,11 +16,9 @@
             .col-md-6{
                 .carousel{
                     .contenedorImagen{
+                        @include fondo(map-get($colores, oscuro), 100%);
                         padding: 10px;
-                        border-radius: 2%;
-                        width: 100%;
                         object-fit:contain;
-                        background-color: map-get($colores, oscuro);
                         justify-content: center;
                         .carousel-item{
                             .d-block{
@@ -45,7 +43,7 @@
                 .título_main{
                     font-size: map-get($tamañofuente, muygrande);
                     text-align: center;
-                    margin: 0px auto;
+                    margin: 10px auto;
                 }
             }
             .row{

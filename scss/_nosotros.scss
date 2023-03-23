@@ -3,26 +3,21 @@
     .container{
         .row{
             .título_nosotros{
-                padding: 10px auto;
-                font-size: map-get($tamañofuente, grande);
-                font-weight: 700;
-                text-align: center;
+                @extend .título_main;
             }
         }
         .row{
             .col-md-6{
                 .Imágenes_Nosotros_Logo{
-                    width: 90%;
+                    @include fondo (map-get($colores, oscuro), 90%);
                     margin: 10px auto;
                     padding: 10px;
-                    border-radius: 2%;
-                    background-color: map-get($colores, oscuro);
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    align-items: center;
                 }
             }
             .Texto_nosotros{
                 font-size:map-get($tamañofuente, casigrande );
-                text-align:center;
+                text-align:justify;
                 width: 90%;
                 margin: 0 auto;
             }
@@ -31,32 +26,23 @@
         .row{
             .col-md-6{
                 .Imágenes_Nosotros{
-                    width: 90%;
+                    @include fondo(map-get($colores, oscuro), 90%);
                     margin: 10px auto;
                     padding: 10px;
-                    border-radius: 2%;
-                    background-color: map-get($colores, oscuro);
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 }
             }
             .col-md-3{
                 .Imágenes_Nosotros{
-                    width: 90%;
+                    @include fondo(map-get($colores, oscuro), 90%);
                     margin: 10px auto;
                     padding: 10px;
-                    border-radius: 2%;
-                    background-color: map-get($colores, oscuro);
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 }
             }
             .col-md-3{
                 .Imágenes_Nosotros{
-                    width: 90%;
+                    @include fondo(map-get($colores, oscuro), 90%);
                     margin: 10px auto;
                     padding: 10px;
-                    border-radius: 2%;
-                    background-color: map-get($colores, oscuro);
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 }
             }
         }
@@ -71,16 +57,17 @@
                 .título_nosotros{
                     font-size: map-get($tamañofuente, muygrande);
                     text-align: center;
-                    margin: 0px auto;
+                    margin: 10px auto;
                 }
             }
 
             .row{
                 .col-md-6{
                     .Imágenes_Nosotros_Logo{
-                        width: 80%;
+                        width: 85%;
                         align-items: center;
-                        margin: 20px ;
+                        justify-content: center;
+                        margin: 20px auto;
                     }
                 }
                 .Texto_nosotros{
@@ -95,19 +82,19 @@
                 .col-md-6{
                     .Imágenes_Nosotros{
                         width: auto;
-                        height: 50vh;
+                        height: 45vh;
                     }
                 }
                 .col-md-3{
                     .Imágenes_Nosotros{
                         width: auto;
-                        height: 50vh;
+                        height: 45vh;
                     }
                 }
                 .col-md-3{
                     .Imágenes_Nosotros{
                         width: auto;
-                        height: 50vh;
+                        height: 45vh;
                     }
                 }
             }

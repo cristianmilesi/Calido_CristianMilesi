@@ -71,85 +71,82 @@ $fuente-muygrande: 2em;
 .FondoPantallaMain {
   background-color: #FFD060;
   height: 85vh; }
-  .FondoPantallaMain .container .row .título_main {
+  .FondoPantallaMain .container .row .título_main, .FondoPantallaMain .container .row .título_nosotros, .FondoPantallaMain .container .row .título_principal {
     padding: 10px auto;
     font-size: 1.5em;
     font-weight: 700;
     text-align: center; }
   .FondoPantallaMain .container .row .col-md-6 .carousel .contenedorImagen {
-    padding: 10px;
-    border-radius: 2%;
-    width: 100%;
-    object-fit: contain;
     background-color: #f15942a2;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    object-fit: contain;
     justify-content: center; }
   .FondoPantallaMain .container .row .textoInicio {
     font-size: 1.5em;
     text-align: center; }
 
 @media screen and (min-width: 769px) {
-  .FondoPantallaMain .container .row .título_main {
+  .FondoPantallaMain .container .row .título_main, .FondoPantallaMain .container .row .título_nosotros, .FondoPantallaMain .container .row .título_principal {
     font-size: 2em;
     text-align: center;
-    margin: 0px auto; }
+    margin: 10px auto; }
   .FondoPantallaMain .container .row .textoInicio {
     text-align: justify;
     font-size: 1.2em; } }
 
 /* ELEMENTOS DE PÁGINA "NOSOTROS" */
-.FondoPantallaMain .container .row .título_nosotros {
-  padding: 10px auto;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-align: center; }
-
 .FondoPantallaMain .container .row .col-md-6 .Imágenes_Nosotros_Logo {
+  background-color: #f15942a2;
   width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px auto;
   padding: 10px;
-  border-radius: 2%;
-  background-color: #f15942a2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  align-items: center; }
 
 .FondoPantallaMain .container .row .Texto_nosotros {
   font-size: 1.2em;
-  text-align: center;
+  text-align: justify;
   width: 90%;
   margin: 0 auto; }
 
 .FondoPantallaMain .container .row .col-md-6 .Imágenes_Nosotros {
-  width: 90%;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 2%;
   background-color: #f15942a2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px auto;
+  padding: 10px; }
 
 .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros {
-  width: 90%;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 2%;
   background-color: #f15942a2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px auto;
+  padding: 10px; }
 
 .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros {
-  width: 90%;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 2%;
   background-color: #f15942a2;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px auto;
+  padding: 10px; }
 
 @media screen and (min-width: 769px) {
   .FondoPantallaMain .container .row .título_nosotros {
     font-size: 2em;
     text-align: center;
-    margin: 0px auto; }
+    margin: 10px auto; }
   .FondoPantallaMain .container .row .col-md-6 .Imágenes_Nosotros_Logo {
-    width: 80%;
+    width: 85%;
     align-items: center;
-    margin: 20px; }
+    justify-content: center;
+    margin: 20px auto; }
   .FondoPantallaMain .container .row .Texto_nosotros {
     text-align: justify;
     width: 50%;
@@ -157,13 +154,13 @@ $fuente-muygrande: 2em;
     font-size: 1.2em; }
   .FondoPantallaMain .container .row .col-md-6 .Imágenes_Nosotros {
     width: auto;
-    height: 50vh; }
+    height: 45vh; }
   .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros {
     width: auto;
-    height: 50vh; }
+    height: 45vh; }
   .FondoPantallaMain .container .row .col-md-3 .Imágenes_Nosotros {
     width: auto;
-    height: 50vh; } }
+    height: 45vh; } }
 
 /*
 .Imágenes_Nosotros{
@@ -193,17 +190,12 @@ $fuente-muygrande: 2em;
 }
 */
 /* Elementos de Página "PRODUCTOS"*/
-.FondoPantallaMain .container .row .título_principal {
-  padding: 10px auto;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-align: center; }
-
 .FondoPantallaMain .container .row .col-md-4 .tarjeta {
-  width: 90%;
-  height: auto;
-  border-radius: 2%;
   background-color: #f15942a2;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: auto;
   align-items: center;
   justify-content: center;
   text-align: center; }
@@ -211,24 +203,52 @@ $fuente-muygrande: 2em;
     color: #fefefe;
     font-size: 1.2em;
     font-weight: 600;
-    margin: 5px auto; }
-  .FondoPantallaMain .container .row .col-md-4 .tarjeta .imagenProducto {
-    width: 90%; }
+    margin: 5px auto;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .FondoPantallaMain .container .row .col-md-4 .tarjeta .contenedorProducto {
+    width: 320px;
+    height: 250px;
+    overflow: hidden;
+    margin: 10px auto; }
+    .FondoPantallaMain .container .row .col-md-4 .tarjeta .contenedorProducto .imagenProducto {
+      width: 320px;
+      height: 250px;
+      object-fit: cover;
+      transition: 1.5s; }
+      .FondoPantallaMain .container .row .col-md-4 .tarjeta .contenedorProducto .imagenProducto:hover {
+        transform: scale(1.5); }
   .FondoPantallaMain .container .row .col-md-4 .tarjeta .parrafoproducto .botón_producto {
-    color: #323232;
-    background-color: #FFD060;
-    border-color: rgba(91, 91, 91, 0.696);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-color: none;
+    transition: 0.5s; }
+    .FondoPantallaMain .container .row .col-md-4 .tarjeta .parrafoproducto .botón_producto:hover {
+      transform: scale(1.1); }
   .FondoPantallaMain .container .row .col-md-4 .tarjeta .collapse .texto_producto {
     font-size: 1em;
     width: 90%;
     margin: 5px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.566);
+    text-align: justify; }
+  .FondoPantallaMain .container .row .col-md-4 .tarjeta .collapse .botón_comprar {
+    color: #323232;
+    font-weight: 600;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.566); }
+    background-color: #FFD060;
+    border-color: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: all 1s; }
+    .FondoPantallaMain .container .row .col-md-4 .tarjeta .collapse .botón_comprar:hover {
+      font-size: 1.25rem;
+      color: #f15942a2; }
 
 @media screen and (min-width: 769px) {
   .FondoPantallaMain .container .row .título_principal {
-    font-size: 2em; }
+    font-size: 2em;
+    margin: 10px, auto; }
   .FondoPantallaMain .container .row .col-md-4 .tarjeta .título_producto {
     font-size: 1.5em; } }
 
@@ -340,11 +360,23 @@ $fuente-muygrande: 2em;
     background-color: #f15942a2;
     color: white; }
 
+.FondoPantallaMain .container .d-flex .mapa {
+  background-color: #f15942a2;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center; }
+
 @media screen and (min-width: 769px) {
-  .FondoPantallaMain .container .row .título_Contacto {
+  .FondoPantallaMain .container .títuloContacto {
     font-size: 2em;
-    text-align: center;
-    margin: 0px auto; } }
+    margin: 10px; }
+  .FondoPantallaMain .container .section_contacto .parrafo_contacto {
+    font-size: 1.5em;
+    margin: 30px auto; } }
 
 /*
             .row{

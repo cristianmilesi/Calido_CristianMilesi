@@ -91,6 +91,17 @@
                 }
             }
         }
+
+        .d-flex{
+            .mapa{
+                @include fondo(map-get($colores, oscuro), 100%);
+                padding: 10px 10px;
+                margin: 10px auto;
+                display: flex;
+                justify-content: center;
+            }
+            
+        }
         
 
     }
@@ -101,18 +112,53 @@
 @media screen and (min-width:769px){
     .FondoPantallaMain {
         .container{
-            .row{
-                .título_Contacto{
-                    font-size: map-get($tamañofuente, muygrande);
-                    text-align: center;
-                    margin: 0px auto;
-                }
+        
+            .títuloContacto{
+                font-size: map-get($tamañofuente, muygrande);
+                margin: 10px;
             }
-        }
 
+            .section_contacto{
+                .parrafo_contacto{
+                    font-size: map-get($tamañofuente, grande);
+                    margin: 30px auto;
+                }
+                
+                .d-flex{
+                    .link_contacto{
+                        
+                        .iconoRedesContacto{
+                                
+                        }
+                    }
+                    
+                    .textoRedesContacto{
+                        
+                    }
+                }
+            
+    
+                .row{
+                    .link_contacto {
+                                            
+                        .iconoRedesContacto{
+                             
+                        }
+                    }
+                    .textoRedesContacto{
+                            
+                    }
+        
+                }
+
+            }
+
+        }
     }
 
 }
+
+
 /*
             .row{
                 .col-md-6{

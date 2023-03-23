@@ -4,37 +4,53 @@
     .container{
         .row{
             .título_principal{
-                padding: 10px auto;
-                font-size: map-get($tamañofuente, grande);
-                font-weight: 700;
-                text-align: center;
+                @extend .título_main;
             }
         }
         .row{
             .col-md-4{
                 .tarjeta{
-                    width: 90%;
+                    @include fondo(map-get($colores, oscuro), 90%);
                     height: auto;
-                    border-radius: 2%;
-                    background-color: map-get($colores, oscuro);
                     align-items: center;
                     justify-content: center;
                     text-align: center;
+                                        
                     .título_producto{
                         color: rgb(254, 254, 254);
                         font-size: map-get($tamañofuente, casigrande);
                         font-weight: 600;
                         margin: 5px auto;
+                        text-shadow:0 0 10px rgba(0, 0, 0, 0.5);
                     }
-                    .imagenProducto{
-                        width: 90%;  
+                    
+                    .contenedorProducto{
+                        width: 320px;
+                        height: 250px;
+                        overflow: hidden;
+                        margin: 10px auto;
+                        .imagenProducto{
+                            width: 320px;
+                            height: 250px;
+                            object-fit: cover;
+                            transition: 1.5s;
+                            &:hover{
+                            transform: scale(1.5);
+                            }  
+                        }
                     }
+
                     .parrafoproducto{
                         .botón_producto{
-                            color: $fuente-oscura;
-                            background-color: map-get($map: $colores, $key: claro);
-                            border-color: rgba(91, 91, 91, 0.696);
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                            color: $fuente-clara;
+                            font-weight: 600;
+                            text-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+                            border-color: none;
+                            transition: 0.5s;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                            
                         }
                     }
                     .collapse{
@@ -42,8 +58,25 @@
                             font-size: map-get($tamañofuente, normal); 
                             width: 90%; 
                             margin: 5px auto;
-                            padding: 5px;
+                            padding: 10px;
                             background-color: rgba(255, 255, 255, 0.566);
+                            text-align: justify;
+
+                        }
+                        .botón_comprar{
+                            color: $fuente-oscura;
+                            font-weight: 600;
+                            padding: 5px;
+                            background-color: map-get($colores,claro);
+                            border-color: none;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                            border-radius: 5px;
+                            transition: all 1s;
+                            &:hover{
+                                font-size: 1.25rem;
+                                color: map-get($colores, oscuro);
+                            }
+
                         }
                     }
                 }
@@ -59,6 +92,7 @@
             .row{
                 .título_principal{
                     font-size: map-get($tamañofuente, muygrande);
+                    margin: 10px, auto;
                 }
             }
             .row{
@@ -75,6 +109,8 @@
                         }
                         .collapse{
                             .texto_producto{
+                            }
+                            .botón_comprar{
                             }
                         }
                     }
